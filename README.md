@@ -2,11 +2,11 @@ avacc
 ==== 
 Asociación de Vecinos y Amigos de Club de Campo.
 
-![avacc](https://github.com/RubenCastroBuzon/avacc/blob/master/images/__avacc-logo-texto.png?raw=true)]
+![avacc](https://github.com/RubenCastroBuzon/avacc/blob/master/images/__avacc-logo-texto.png?raw=true)
 
 
-# How to
-Use Pure, here
+# Using
+Pure
 [http://purecss.io/][Pure]
 
 [![Build Status](http://img.shields.io/travis/yahoo/pure.svg?style=flat)][Build Status]
