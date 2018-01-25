@@ -2,8 +2,7 @@ avacc
 ==== 
 Asociación de Vecinos y Amigos de Club de Campo.
 
-https://github.com/RubenCastroBuzon/avacc/blob/master/images/__avacc-logo-texto.png?raw=true
-
+![avacc](https://github.com/RubenCastroBuzon/avacc/blob/master/images/__avacc-logo-texto.png?raw=true)]
 
 
 # How to
