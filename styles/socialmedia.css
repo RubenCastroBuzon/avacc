@@ -1,12 +1,12 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 .footer-social-icons {
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
   background: rgba(34,177,55,0.2);
   padding: 10px;
   border: 2px solid #fff;
-  border-radius: 20px/50px;
+  border-radius: 10px/50px;
   background-clip: padding-box;
   text-align: left;
 }
