@@ -1,11 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+/*@import url(https://fonts.googleapis.com/css?family=Lato);*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+/*
 body {
     font-family: 'Lato', sans-serif;
     color: #FFF;
     background: #322f30;
     -webkit-font-smoothing: antialiased;
 }
+*/
 a {
     text-decoration: none;
     color: #fff;
@@ -32,11 +34,7 @@ ul {
     padding:0;
     list-style: none;
 }
-.footer-social-icons {
-    width: 350px;
-    display:block;
-    margin: 0 auto;
-}
+
 .social-icon {
     color: #fff;
 }
@@ -136,3 +134,33 @@ ul.social-icons {
 .fa-google-plus:hover {
     background-color: #e25714;
 }
+
+
+/*
+.fa-facebook:after {
+  content: " facebook";
+}
+
+.fa-facebook::after {
+  content: " facebook";
+}
+
+
+
+.fa-twitter:after {
+  content: " twitter";
+}
+
+.fa-twitter::after {
+  content: " twitter";
+}
+
+
+.fa-instagram:after {
+  content: " instagram";
+}
+
+.fa-instagram::after {
+  content: " instagram";
+}
+*/
