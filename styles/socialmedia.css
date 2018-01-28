@@ -1,17 +1,33 @@
-/*@import url(https://fonts.googleapis.com/css?family=Lato);*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-/*
-body {
-    font-family: 'Lato', sans-serif;
-    color: #FFF;
-    background: #322f30;
-    -webkit-font-smoothing: antialiased;
+
+.footer-social-icons {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(34,177,55,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: left;
 }
-*/
+
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(34,177,55,0.2);
+  padding: 5px;
+  border: 2px solid #fff;
+  border-radius: 10px/50px;
+  background-clip: padding-box;
+  text-align: left;
+}
+
 a {
     text-decoration: none;
     color: #fff;
 }
+
 p > a:hover{
     color: #d9d9d9;
     text-decoration:  underline;
@@ -134,33 +150,3 @@ ul.social-icons {
 .fa-google-plus:hover {
     background-color: #e25714;
 }
-
-
-/*
-.fa-facebook:after {
-  content: " facebook";
-}
-
-.fa-facebook::after {
-  content: " facebook";
-}
-
-
-
-.fa-twitter:after {
-  content: " twitter";
-}
-
-.fa-twitter::after {
-  content: " twitter";
-}
-
-
-.fa-instagram:after {
-  content: " instagram";
-}
-
-.fa-instagram::after {
-  content: " instagram";
-}
-*/
