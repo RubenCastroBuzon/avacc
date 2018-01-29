@@ -12,6 +12,9 @@
     -->
    <link rel="stylesheet" href="./styles/pure.css">
    <link rel="stylesheet" href="./styles/socialmedia.css">
+   <link rel="stylesheet" href="./styles/avacc.css">
+
+   <script async src="./js/avacc.js"/>
 
    <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112735114-1"/>
@@ -24,97 +27,12 @@
 </head>
 <body>
 
-
-
-
-
 <!--[if lte IE 8]>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
 <![endif]-->
 <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 <!--<![endif]-->
-
-<style>
-
-.custom-wrapper {
-    /*background-color: #ffd390;*/
-    background-color: #555;    
-    margin-bottom: 1em;
-    -webkit-font-smoothing: antialiased;
-    height: 2.1em;
-    overflow: hidden;
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    -ms-transition: height 0.5s;
-    transition: height 0.5s;
-}
-
-.custom-wrapper.open {
-    height: 14em;
-}
-
-.custom-menu-3 {
-    text-align: right;
-}
-
-.custom-toggle {
-    width: 34px;
-    height: 34px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-}
-
-.custom-toggle .bar {
-    background-color: #777;
-    display: block;
-    width: 20px;
-    height: 2px;
-    border-radius: 100px;
-    position: absolute;
-    top: 18px;
-    right: 7px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.custom-toggle .bar:first-child {
-    -webkit-transform: translateY(-6px);
-    -moz-transform: translateY(-6px);
-    -ms-transform: translateY(-6px);
-    transform: translateY(-6px);
-}
-
-.custom-toggle.x .bar {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.custom-toggle.x .bar:first-child {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-@media (max-width: 47.999em) {
-
-    .custom-menu-3 {
-        text-align: left;
-    }
-
-    .custom-toggle {
-        display: block;
-    }
-
-}
-</style>
    <nav class="custom-wrapper pure-g" id="menu">
        <article class="pure-u-1 pure-u-md-1-3">
            <div class="pure-menu">
@@ -127,86 +45,38 @@
                <ul class="pure-menu-list">
                    <li class="pure-menu-item"><a href="./index.html" class="pure-menu-link">Inicio</a></li>
                    <li class="pure-menu-item"><a href="./news.html" class="pure-menu-link">Noticias</a></li>
+                   <li class="pure-menu-item"><a href="./documents.html" class="pure-menu-link">Documentos</a></li>
                    <li class="pure-menu-item"><a href="./contact.html" class="pure-menu-link">Contacto</a></li>
                </ul>
            </div>
        </article>
        <article class="pure-u-1 pure-u-md-1-3">
            <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
-               <ul class="pure-menu-list">
-                   <li class="pure-menu-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXrrjmTXLCqxoqpwWaTGxNpJVct26LAG02FNvMCyvsD-M30Q/viewform" target="_blank" class="pure-menu-link">Alta</a></li>
-                   <li class="pure-menu-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeVhq1uXu0V_uaEUxIOmP42W5aJQcdjgwCe4Cn7U861oAzRkw/viewform" target="_blank" class="pure-menu-link">Baja</a></li>
-               </ul>
+                <ul style="margin-top:-13px;">
+                  <li align="center">
+                      <ul class="social-icons">
+                          <li><a alt="facebook" href="https://www.facebook.com/AVACC-1639021659525422" class="social-icon"><i class="fa fa-facebook" alt="facebook"></i></a></li>
+                          <li><a alt="twitter" href="https://twitter.com/ava_clubcampo?ref_src=twsrc%5Etfw" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                          <li><a alt="instagram" href="https://www.instagram.com/ava_clubcampo/" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                          <!--<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>-->
+                          <!--<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>-->
+                          <!--<li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>-->
+                          <!--<li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>-->
+                      </ul>
+                   </li>            
+                </ul>
            </div>
        </article>
    </nav>
-<script>
-(function (window, document) {
-var menu = document.getElementById('menu'),
-    WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
-
-function toggleHorizontal() {
-    [].forEach.call(
-        document.getElementById('menu').querySelectorAll('.custom-can-transform'),
-        function(el){
-            el.classList.toggle('pure-menu-horizontal');
-        }
-    );
-};
-
-function toggleMenu() {
-    // set timeout so that the panel has a chance to roll up
-    // before the menu switches states
-    if (menu.classList.contains('open')) {
-        setTimeout(toggleHorizontal, 500);
-    }
-    else {
-        toggleHorizontal();
-    }
-    menu.classList.toggle('open');
-    document.getElementById('toggle').classList.toggle('x');
-};
-
-function closeMenu() {
-    if (menu.classList.contains('open')) {
-        toggleMenu();
-    }
-}
-
-document.getElementById('toggle').addEventListener('click', function (e) {
-    toggleMenu();
-    e.preventDefault();
-});
-
-window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
-})(this, this.document);
-
-</script>
-
-<style>
-.main {
-    padding: 2em;
-    color: black;
-}
-</style>
 
    <main class="main">
 
       <aside class="footer-social-icons">
           <ul>
-            <li align="center">
-                <ul class="social-icons">
-                    <li><a alt="facebook" href="https://www.facebook.com/AVACC-1639021659525422" class="social-icon"><i class="fa fa-facebook" alt="facebook"></i></a></li>
-                    <li><a alt="twitter" href="https://twitter.com/ava_clubcampo?ref_src=twsrc%5Etfw" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                    <li><a alt="instagram" href="https://www.instagram.com/ava_clubcampo/" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-                    <!--<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>-->
-                    <!--<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>-->
-                    <!--<li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>-->
-                    <!--<li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>-->
-                </ul>
-             </li>
+            
              <li align="center">
-               <p class="social-icon">Estamos reunidos. En breve informaremos a todos. Muchas gracias</p>
+               <p class="social-icon">AVACC nace con el firme propósito de defender los intereses de todos los vecinos de la Urbanización Club de Campo de San Sebastián de los Reyes (Madrid). Nuestra principal inquietud hoy es la inminente obra de ampliación de la A1 y la construcción de la nueva variante porque NO queremos que nos perjudique en modo alguno. Necesitamos de tu colaboración. Asóciate y podremos defender mejor los intereses de todos.
+Por supuesto, no queremos que nuestra actividad sea exclusivamente esta, aunque sea ahora nuestra prioridad. Pretendemos perdurar en el tiempo como una asociación vecinal sólida y fuerte ante el Ayuntamiento de San Sebastián de los Reyes y la Comunidad de Madrid, persiguiendo lo mejor para los vecinos de Club de Campo y para todos los amigos  que nos visitan y quieran ayudarnos.</p>
              </li>
           </ul>
       </aside>
@@ -221,7 +91,7 @@ window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
    -->
        
       <header style="text-align:center">
-         <img src="./images/__avacc-logo-texto.png" width="75%" height="75%"></img>
+         <img src="./images/__avacc-logo-texto.png" width="65%" height="65%"></img>
       </header>
 
        <footer style="text-align:center">
