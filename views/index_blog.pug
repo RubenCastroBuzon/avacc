@@ -1,0 +1,64 @@
+extend layout_blog
+
+block body
+    body
+        main(class="main")
+            div(id="layout" class="pure-g")
+
+                aside(class="sidebar pure-u-1 pure-u-md-1-4")
+                    header(class="header")
+                        h1(class="brand-title" data-tooltip="es responsabilidad de todos" style="text-align: center;")
+                            a(href="/about" style="text-decoration: none;")
+                                span(style="color: #ed6d05;") A
+                                span(style="color: #03a85f;") V
+                                span(style="color: #ed6d05;") A
+                                span(style="color: white") CC
+                        //-
+                            h3(class="brand-tagline")                            
+                                a(href="/about") <span style="color: #ed6d05;">A</span>sociación de <span style="color: #03a85f;">V</span>ecinos y <span style="color: #ed6d05;">A</span>migos de <br><span style="color: black;">C</span>lub de <span style="color: black;">C</span>ampo
+                                a(href="/about") Asociación de Vecinos y Amigos de <br>Club de Campo
+                        p(style="font-weight: bold; margin-top: 1em;" class="pure-menu-item")
+                            h3
+                                a(href="./donate" class="pure-menu-link" data-tooltip="juntos somos mas") Hazte socio
+                        p(style="font-weight: bold; margin-top: 1em;" class="pure-menu-item")
+                            h3
+                                a(href="./about" class="pure-menu-link" data-tooltip="es responsabilidad de todos") Sobre nosotros
+                        p(style="font-style: italic; margin-top: 1em;" class="pure-menu-item")
+                            <a href="https://www.change.org/p/ministerio-de-fomento-no-a-la-alternativa-elegida-variante-autov%C3%ADa-a1" class="pure-menu-link" data-tooltip="NO al nudo Club de Campo"><span style="color: #ed6d05;">VOTA</span> ¡NO!</a>
+                        nav(class="nav" style="margin-top: 1em;")
+                            ul(class="nav-list")
+                                li(class="nav-item" style="margin-left: 0.3em; margin-right: 0.3em;")
+                                    a(href="https://www.facebook.com/AVACC-1639021659525422")
+                                        i(class="fa fa-facebook")
+                                li(class="nav-item" style="margin-left: 0.3em; margin-right: 0.3em;")
+                                    a(href="https://twitter.com/ava_clubcampo?ref_src=twsrc%5Etfw")
+                                        i(class="fa fa-twitter")
+                                li(class="nav-item" style="margin-left: 0.3em; margin-right: 0.3em;")
+                                    a(href="https://www.instagram.com/ava_clubcampo/")
+                                        i(class="fa fa-instagram")
+                                li(style="margin-top: 2em;")
+                                    a(href="mailto:contactar@avacc.org" style="text-decoration: none;color:#03a85f;") contactar@avacc.org
+
+                div(class="content pure-u-1 pure-u-md-3-4")
+                    a(class="avacc_img pure-g" href="/about")
+                        div(class="pure-u-1 pure-u-md-1-3")
+                        img(class="avacc_logo pure-img pure-u-1 pure-u-md-1-3" src="./images/__avacc-logo-texto_h250.png" alt="AVACC")
+                        div(class="pure-u-1 pure-u-md-1-3")
+                    div
+                        article(class="posts")
+                            h1(class="content-subhead") Sobre nosotros
+                            block articles_about_us
+                        article(class="posts")
+                            h1(class="content-subhead") Noticias
+                            block articles
+
+                        footer(class="blog_footer")
+                            div(style="font-weight: bold;" class="pure-menu pure-menu-horizontal")
+                                ul
+                                    li(class="pure-menu-item")
+                                        a(href="http://purecss.io/" class="pure-menu-link") Pure-CSS
+                                    li(class="pure-menu-item")
+                                        a(href="https://github.com/joseAndresGomezTovar/avacc_app" class="pure-menu-link") GitHub
+                                    li(class="pure-menu-item")
+                                        a(href="https://docs.google.com/forms/d/e/1FAIpQLSeVhq1uXu0V_uaEUxIOmP42W5aJQcdjgwCe4Cn7U861oAzRkw/viewform" class="pure-menu-link") Darme de baja
+                                    li Urbanización Club de Campo<br> San Sebastián de los Reyes (Madrid)<br> Ctra. A1, Km 26.

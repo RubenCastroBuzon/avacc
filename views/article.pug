@@ -1,0 +1,36 @@
+block append articles
+    if (news != undefined)
+        each subhead in news
+            if (subhead.content_subhead != undefined)
+                h2(class="content-subhead")= subhead.content_subhead
+                each content in subhead.contents
+                    h3= content.content_head
+                    section(class="post")
+                        header(class="post-header" id=content.newsid)
+                            if (content.avatar != undefined)
+                                img(width="72" height="72" alt=content.avatar_text class="post-avatar" src=content.avatar)
+                            h2(class="post-title")
+                                if (content.showHide_id != undefined)
+                                    a(href="#" style="color: black;" onclick="avacc_showHide('" + content.showHide_id + "'); return false;")= content.post_title
+                                else
+                                    .
+                                        #{content.post_title}
+                            p(class="post-meta") Por 
+                                a(href="#" class="post-author") #{content.post_author} 
+                                if (content.post_category_style != undefined)
+                                    a(class="post-category " style="background: " + content.post_category_style + ";" href=content.post_category_ref)= content.post_category
+                                else
+                                    a(class="post-category" href=content.post_category_ref)= content.post_category
+                        if (content.showHide_id != undefined)
+                            p(class="avacc_pLink")
+                                a(href="#" id=content.showHide_id+"-show" class="avacc_showLink" onclick="avacc_showHide('" + content.showHide_id + "'); return false;") más...
+
+                        div(id=content.showHide_id class=content.showHide_id!=undefined ? "avacc_more" : "")
+                            if (content.showHide_id != undefined)
+                                p(class="avacc_pLink")
+                                    a(href="#" id=content.showHide_id + ".1-hide" class="avacc_showLink" onclick="avacc_showHide('" + content.showHide_id + "'); return false;") menos...
+
+                            div(class="post-description")!= content.post_description
+                                if (content.showHide_id != undefined)
+                                    p(class="avacc_pLink")
+                                        a(href="#" id=content.showHide_id + ".2-hide" class="avacc_showLink" onclick="avacc_showHide('" + content.showHide_id + "'); return false;") menos...
