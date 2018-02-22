@@ -1,0 +1,30 @@
+{
+  "name": "avacc-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha --recursive test/ --trace-warnings",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive ./test/ --trace-warnings",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "chalk": "^2.3.1",
+    "cookie-parser": "~1.4.3",
+    "express": "~4.15.5",
+    "html-validator": "^2.2.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.1",
+    "morgan": "~1.9.0",
+    "normalize.css": "^8.0.0",
+    "pug": "^2.0.0-rc.4",
+    "purecss": "^1.0.0",
+    "request": "^2.83.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "mocha-lcov-reporter": "^1.3.0"
+  }
+}
