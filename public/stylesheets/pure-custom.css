@@ -1,0 +1,40 @@
+/*
+body {
+   height: 80vh;
+}
+*/
+
+.pure-menu-heading {
+    /*color: #565d64;*/
+    color: #FFFFFF;
+}
+
+.pure-menu-link {
+    /*color: #777;*/
+    color: #FFFFFF;
+}
+
+.pure-menu-active > .pure-menu-link,
+.pure-menu-link:hover,
+.pure-menu-link:focus {
+    /*
+    background-color: #eee;       GRIS - blanco
+
+    background-color: #555555;    GRIS
+    background-color: #ed6d05;    NARANJA
+    background-color: #03a85f;    VERDE
+    */
+    background-color: #555555;
+    color:#03a85f;
+}
+
+/*
+.pure-u-1 .pure-u-md-1-2 a {
+    color: #03a85f;
+}
+
+.post-author {
+    color: #03a85f;
+    text-decoration: none;
+}
+*/

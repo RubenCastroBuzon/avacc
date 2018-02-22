@@ -1,0 +1,168 @@
+.avacc_more {
+  display: none;
+}
+
+.avacc_pLink {
+  text-align: right;
+}
+
+.avacc_showLink, .avacc_hideLink {
+  font-size: 1em;
+  text-decoration: none;
+  /* RCB color: #36f;*/
+  color:#03a85f;
+  padding-left: 8px;
+}
+
+.avacc_showLink:hover, .avacc_hideLink:hover {
+  border-bottom: 1px dotted #36f;
+}
+
+.avacc_body {
+  /*background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat center center fixed; */
+  background: url(../images/grey_bg.png) no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+}
+
+.avacc_aside {
+  width: 80%;
+  margin: 0 auto;
+  /*
+  background: rgba(34,177,55,0.2);
+  #484848   rgb(72,72,72)
+  */
+  background: rgba(72,72,72,0.2);
+  padding: 10px;
+  border: 3px solid #57A639;
+  border-radius: 10px/10px;
+  background-clip: padding-box;
+  text-align: left;
+  color: black;
+}
+/*
+footer {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(34,177,55,0.2);
+  padding: 5px;
+  border: 2px solid #fff;
+  border-radius: 10px/50px;
+  background-clip: padding-box;
+  text-align: left;
+}
+*/
+
+.avacc_footer {
+    margin-top: 15%;
+
+    padding: 1em;
+
+    background-color: #ECECEC;
+    text-align: center;
+    --border: 2px solid #fff;
+}
+
+.avacc_header {
+    /*to make a header always visible*/
+    /*position: fixed;*/
+}
+
+.avacc_img {
+    background-color: white;
+    margin-top: -1em;
+}
+
+.avacc_logo {
+  max-height: 10em;
+
+  /*opacity: 0.5;*/
+}
+
+.custom-wrapper {
+    /*background-color: #ffd390;*/
+    background-color: #555;    
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+    height: 2.1em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+    height: 14em;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+    .custom-menu-3 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+
+}
+
+
+.main {
+    padding: 2em;
+    color: black;
+}
