@@ -10,8 +10,8 @@
  */
 body {
     line-height: 1.7em;
-    /*color: #7f8c8d;*/
-    color: 555555;
+    /*RCB color: #7f8c8d;*/
+    color: #555555;
     font-size: 13px;
 }
 
@@ -72,7 +72,8 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    background-color: #1f8dd6;
+    /*RCB background-color: #1f8dd6;*/
+    background-color: #03a85f;
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
@@ -80,7 +81,8 @@ label {
 
 a.pure-button-primary {
     background: white;
-    color: #1f8dd6;
+    /*RCBcolor: #1f8dd6;*/
+    color: #03a85f;
     border-radius: 5px;
     font-size: 120%;
 }
@@ -97,7 +99,8 @@ a.pure-button-primary {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu {
-    background: #2d3e50;
+    /*RCB background: #2d3e50; */
+    background: #555555;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -124,7 +127,7 @@ a.pure-button-primary {
 .home-menu li a:focus {
     background: none;
     border: none;
-    /*color: #AECFE5;*/
+    /*RCB color: #AECFE5;*/
     color:#ed6d05;
 }
 
@@ -221,13 +224,16 @@ a.pure-button-primary {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #2d3e50;
+    /*RCB background: #2d3e50; */
+    background: #555555;
     color: #aaa;
 }
 
 /* This is the class used for the footer */
 .footer {
-    background: #111;
+    /*RCB background: #111; */
+    background: #555555;
+    color: white;
     position: fixed;
     bottom: 0;
     width: 100%;

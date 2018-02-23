@@ -11,7 +11,8 @@
 
 body {
     line-height: 1.7em;
-    color: #7f8c8d;
+    /*RCB color: #7f8c8d;*/
+    color: #555555;
     font-size: 13px;
 }
 
@@ -81,7 +82,8 @@ label {
 
 a.pure-button-primary {
     background: white;
-    color: #1f8dd6;
+    /*RCBcolor: #1f8dd6;*/
+    color: #03a85f;
     border-radius: 5px;
     font-size: 120%;
 }
@@ -98,7 +100,8 @@ a.pure-button-primary {
 }
 
 .home-menu {
-    background: #2d3e50;
+     /*RCB background: #2d3e50; */
+    background: #555555;
 }
 
 .pure-menu.pure-menu-fixed {
@@ -119,14 +122,17 @@ a.pure-button-primary {
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    /*color: #6FBEF3;*/
+    color:#03a85f;
 }
 
 .home-menu li a:hover,
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #AECFE5;
+    /*RCB color: #AECFE5;*/
+    color:#ed6d05;
+
 }
 
 /*
@@ -135,7 +141,8 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #1f8dd6;
+    /*RCB background: #1f8dd6;*/
+    background: #03a85f;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -220,7 +227,8 @@ a.pure-button-primary {
 /* This is the class used for the content sub-headers (<h3>) */
 
 .content-subhead {
-    color: #1f8dd6;
+    /*RCB color: #1f8dd6; */
+    color: #03a85f;
 }
 
 .content-subhead i {
@@ -230,14 +238,17 @@ a.pure-button-primary {
 /* This is the class used for the dark-background areas. */
 
 .ribbon {
-    background: #2d3e50;
+    /*RCB background: #2d3e50; */
+    background: #555555;
     color: #aaa;
 }
 
 /* This is the class used for the footer */
 
 .footer {
-    background: #111;
+    /*RCB background: #111; */
+    background: #555555;
+    color: white;
     position: fixed;
     bottom: 0;
     width: 100%;

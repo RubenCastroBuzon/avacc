@@ -104,11 +104,13 @@
  */
 
 .pricing-table-free .pricing-table-header {
-    background: #519251;
+    /*RCB background: #519251;*/
+    background: #03a85f;
 }
 
 .pricing-table-biz .pricing-table-header {
-    background: #2c4985;
+    /*RCB background: #2c4985;*/
+    background: #555555;
 }
 
 /*
