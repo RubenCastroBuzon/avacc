@@ -4,7 +4,8 @@
  */
 
 .pricing_body {
-    color: #526066;
+    /*RCB color: #526066; */
+    color:white;
 }
 
 .pricing_h2,
@@ -196,8 +197,10 @@
 }
 
 .footer {
-    background: #111;
-    color: #888;
+    /*RCB background: #111;
+    color: #888; */
+    background: #555555;
+    colour: white;
     text-align: center;
 }
 
