@@ -29,7 +29,7 @@ var get_february_2018 = function () {
             post_category_ref: './donate',
             post_category: 'Ayudanos. Ayudate',
             post_category_style: '#ed6d05',
-            post_description: 'Se abrio la cuenta Bancaría en el BBVA de Paracuellos de Jarama.<br> <a href="/donate">IBAN: ES27 0182 8085 4702 0162 8042</a>'
+            post_description: 'Se abrió la cuenta bancaria en el BBVA de Paracuellos de Jarama.<br> <a href="/donate">IBAN: ES27 0182 8085 4702 0162 8042</a>'
         }
         return content;
     };
