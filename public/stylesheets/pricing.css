@@ -3,8 +3,7 @@
  * Most of these are inherited from Base, but I want to change a few.
  */
 .pricing_body {
-    /*RCB color: #526066; */
-    color:white;
+    color: #526066;
 }
 
 .pricing_h2, .pricing_h3 {
@@ -208,8 +207,6 @@
 .footer a {
     color: #ddd;
 }
-
-
 
 /*
  * -- TABLET MEDIA QUERIES --
