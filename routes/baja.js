@@ -10,7 +10,7 @@ router.use(function timeLog(req, res, next) {
 
 /* GET donate page. */
 router.get('/', function(req, res, next) {
-    res.redirect('https://docs.google.com/forms/d/e/1FAIpQLSfXrrjmTXLCqxoqpwWaTGxNpJVct26LAG02FNvMCyvsD-M30Q/viewform');
+    res.status(301).redirect('https://docs.google.com/forms/d/e/1FAIpQLSeVhq1uXu0V_uaEUxIOmP42W5aJQcdjgwCe4Cn7U861oAzRkw/viewform');
 });
 
 module.exports = router;
