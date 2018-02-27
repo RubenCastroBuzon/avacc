@@ -31,8 +31,8 @@ app.use('/', index);
 app.use('/donate', donate);
 app.use('/users', users);
 app.use('/about', about);
-//app.use('/alta', alta);
-//app.use('/baja', baja);
+app.use('/alta', alta);
+app.use('/baja', baja);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
