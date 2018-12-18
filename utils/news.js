@@ -12,7 +12,7 @@ var getDiciembre2018 = function () {
           post_category_ref: './alta',
           post_category: 'Reunión',
           post_category_style: '#555555',
-          post_description: '<p>El 11 de Diciembre, AVACC se reúne con los partidos políticos de San Sebastián de los Reyes. En breve sacaremos un comunicado con todos los temas hablados en esta reunión.'
+          post_description: '<p>El 11 de Diciembre, AVACC se reúne con los partidos políticos de San Sebastián de los Reyes. En breve se publicará un comunicado con todos los asuntos tratados en esta reunión.'
   
         }
         return content
@@ -26,7 +26,7 @@ var getDiciembre2018 = function () {
         post_category_ref: './alta',
         post_category: 'Reunión',
         post_category_style: '#555555',
-        post_description: '<p>El 13 de Diciembre, se produce una reunión en el centro cívico del Alcalde y algunos miembros del ayuntamiento de San Sebastián de los Reyes con los vecinos de club de campo.'
+        post_description: '<p>El 13 de Diciembre, se produce una reunión en el centro cívico en la que el Alcalde y algunos miembros del ayuntamiento de San Sebastián de los Reyes y AVACC informan a los vecinos de club de campo de las diferentes reuniones y actuaciones realizadas sobre la Variante a la A-1.'
 
       }
       return content
@@ -83,7 +83,7 @@ var getOctubre2018 = function () {
         post_category_ref: './alta',
         post_category: 'Reunión',
         post_category_style: '#555555',
-        post_description: '<p>El 25 de Octubre, se produce una reunión en el centro cívico del Alcalde y algunos miembros del ayuntamiento de San Sebastian de los Reyes con los vecinos de club de campo.'
+        post_description: '<p>El 25 de Octubre, se produce una reunión en el centro cívico del Alcalde y algunos miembros del ayuntamiento de San Sebastian de los Reyes con los vecinos de club de campo. El alcalde y AVACC informan a los vecinos de las diferentes reuniones con Fomento.'
       }
       return content
     }
