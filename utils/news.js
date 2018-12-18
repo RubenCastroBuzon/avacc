@@ -56,7 +56,9 @@ var getDiciembre2018 = function () {
           post_category: 'Noticia',
           post_category_style: '#555555',
           post_description: '<p>El 22 de Noviembre, El proyecto de la variante de la A-1 despega: el presidente Pedro Sánchez se ha comprometido ante el jefe del Ejecutivo regional, Ángel Garrido, a que se desbloquee esta iniciativa.'
-          +'<br> <a target="_blank" style="color:#ed6d05;" href=https://www.abc.es/espana/madrid/abci-angel-garrido-penultimo-presidente-visita-moncloa-201811220203_noticia.html" rel="noreferrer">Ángel Garrido arranca a Sánchez el compromiso de desbloquear la variante de la A-1</a>'
+          +'<br> <a target="_blank" style="color:#ed6d05;" href=https://www.abc.es/espana/madrid/abci-angel-garrido-penultimo-presidente-visita-moncloa-201811220203_noticia.html rel="noreferrer">Ángel Garrido arranca a Sánchez el compromiso de desbloquear la variante de la A-1</a>'
+          +'<br> <a target="_blank" style="color:#ed6d05;" href=https://ecodiario.eleconomista.es/politica-eD/noticias/9537023/11/18/El-proyecto-de-construccion-de-la-variante-de-la-A1-podria-empezar-en-enero.html?fbclid=IwAR0BIrOoRGXnqFs2VQjfqbGhNDmDMYRzuX7xMiCfO-KJEpG9UEypA_0dQCc rel="noreferrer">El proyecto de construcción de la variante de la A-1 podría empezar en enero</a>'
+          +'<br> <a target="_blank" style="color:#ed6d05;" href=http://zonaretiro.com/transporte/variante-a-1/?fbclid=IwAR1exv33aIxcvEdyZKaGUWxx7x3_iaUuzAU6M2iHDzbbpzr5lbzN7i7ZzbA rel="noreferrer">Así será la variante de la autovía A-1 entre la M-12 y El Molar</a>'
   
         }
         return content
