@@ -1,23 +1,35 @@
 {
   "name": "avacc-app",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "server": "nodemon ./bin/www",
     "test": "mocha --recursive test/ --trace-warnings",
+    "con": "concurrently --kill-others \"node ./bin/www\" \"mocha --recursive test/ --trace-warnings\"",
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive ./test/ --trace-warnings",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "debug": "nodemon --inspect ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
     "chalk": "^2.3.1",
+    "cheerio": "^1.0.0-rc.2",
+    "co": "^4.6.0",
+    "concurrently": "^3.5.1",
+    "connect-ensure-login": "^0.1.1",
     "cookie-parser": "~1.4.3",
-    "express": "~4.15.5",
+    "csstree-validator": "^1.3.1",
+    "csurf": "^1.9.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "html-validator": "^2.2.3",
     "istanbul": "^0.4.5",
     "mocha": "^5.0.1",
     "morgan": "~1.9.0",
     "normalize.css": "^8.0.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "pug": "^2.0.0-rc.4",
     "purecss": "^1.0.0",
     "request": "^2.83.0",
@@ -25,6 +37,25 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "mocha-lcov-reporter": "^1.3.0"
+    "mocha-lcov-reporter": "^1.3.0",
+    "nodemon": "^1.17.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joseAndresGomezTovar/avacc_app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joseAndresGomezTovar/avacc_app/issues"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "create-react-app"
+  ],
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
   }
 }

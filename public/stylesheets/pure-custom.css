@@ -4,6 +4,10 @@ body {
 }
 */
 
+.button-avacc {
+    background-color: #03a85f;
+}
+
 .pure-menu-heading {
     /*color: #565d64;*/
     color: #FFFFFF;

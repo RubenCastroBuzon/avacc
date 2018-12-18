@@ -8,6 +8,7 @@ block body
           img(class="pure-img" src='./images/__avacc-logo-texto_h250.png' alt='AVACC')
         div(class="pure-u-1 pure-u-md-1-2")
           h1= message
+          h2= error.code
           h2= error.status + ' That’s an error.'
         div(class="pure-u-1 pure-u-md-1-1")
           pre #{error.stack}

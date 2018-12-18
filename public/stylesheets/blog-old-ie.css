@@ -6,12 +6,15 @@
 
 a {
     text-decoration: none;
-    color: rgb(61, 146, 201);
+    /*RCB color: rgb(61, 146, 201);*/
+    color:#03a85f;
 }
 
 a:hover,
 a:focus {
     text-decoration: underline;
+    /*RCB */
+    color:#03a85f;
 }
 
 h3 {
@@ -52,7 +55,7 @@ h3 {
 
 .brand-tagline {
     font-weight: 300;
-    color: rgb(176, 202, 219);
+    color: rgb(3, 166, 95);
 }
 
 .nav-list {
@@ -69,7 +72,7 @@ h3 {
 
 .nav-item a {
     background: transparent;
-    border: 2px solid rgb(176, 202, 219);
+    border: 2px solid rgb(3, 166, 95);
     color: #fff;
     margin-top: 1em;
     letter-spacing: 0.05em;
@@ -114,7 +117,8 @@ h3 {
 }
 
 .post-description {
-    font-family: Georgia, "Cambria", serif;
+    /*RCB font-family: Georgia, "Cambria", serif;*/
+    font-family:sans-serif;
     color: #444;
     line-height: 1.8em;
 }

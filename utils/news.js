@@ -1,190 +1,449 @@
-var newsid_ = 1;
-
-var get_newsid = function () {
-    var ret = "news_id" + newsid_;
-    newsid_ += 1
-    return ret;
-};
-
-var showHide_id_ = 1;
-var get_showHide_id = function () {
-    var ret = "id" + showHide_id_;
-    showHide_id_ += 1;
-    return ret;
-};
+var news2017 = require('../utils/news_2017.js')
 
 
+var getDiciembre2018 = function () {
 
-
-
-var get_february_2018 = function () {
-    var get_15 = function () {
+    var get11 = function () {
         var content = {
-            newsid: get_newsid(),
-            content_head: '15 de febrero de 2018',
-            //avatar: './images/avatar/FernandoLopezPalao.jpg',
-            //avatar_text: 'Fernando Lopez Palao',
-            post_title: 'Apertura de Cuenta Bancaria',
-            post_author: 'Tesorera',
-            post_category_ref: './donate',
-            post_category: 'Ayudanos. Ayudate',
-            post_category_style: '#ed6d05',
-            post_description: 'Se abrió la cuenta bancaria en el BBVA de Paracuellos de Jarama.<br> <a href="/donate">IBAN: ES27 0182 8085 4702 0162 8042</a>'
+          newsid: news2017.get_newsid(),
+          content_head: '11 de Diciembre de 2018',
+          post_title: 'AVACC se reune con los partidos políticos de San Sebastián de los Reyes',
+          post_author: 'Presidente',
+          post_category_ref: './alta',
+          post_category: 'Reunión',
+          post_category_style: '#555555',
+          post_description: '<p>El 11 de Diciembre, AVACC se reúne con los partidos políticos de San Sebastián de los Reyes. En breve sacaremos un comunicado con todos los temas hablados en esta reunión.'
+  
         }
-        return content;
-    };
+        return content
+      }
+    var get13 = function () {
+      var content = {
+        newsid: news2017.get_newsid(),
+        content_head: '13 de Diciembre de 2018',
+        post_title: 'Reunión de vecinos de club de campo con el Alcalde de San Sebastián de los Reyes',
+        post_author: 'Presidente',
+        post_category_ref: './alta',
+        post_category: 'Reunión',
+        post_category_style: '#555555',
+        post_description: '<p>El 13 de Diciembre, se produce una reunión en el centro cívico del Alcalde y algunos miembros del ayuntamiento de San Sebastián de los Reyes con los vecinos de club de campo.'
 
-    var get_2 = function () {
-        var content = {
-            newsid: get_newsid(),
-            content_head: '2 de febrero de 2018',
-            //avatar: './images/avatar/FernandoLopezPalao.jpg',
-            //avatar_text: 'Fernando Lopez Palao',
-            post_title: 'Registro de la asociación',
-            post_author: 'Vice-Tesorero',
-            post_category_ref: './donate',
-            post_category: 'Donar',
-            post_category_style: '#555555',
-            post_description: 'El pasado día 2 de febrero de 2018 se obtuvo el identificador provisional de Asociación. Ahora vamos a cerrar la web y el banco para poder contar con todos vosotros.'
-        };
-        return content;
-    };
-
+      }
+      return content
+    }
+    
+  
     var subhead = {
-        content_subhead: 'Febrero 2018',
-        contents: []
-    };
+      content_subhead: 'Diciembre 2018',
+      contents: []
+    }
+  
+    subhead.contents.push(get13())
+    subhead.contents.push(get11())
+      
+    return subhead
+  }
 
-    subhead.contents.push(get_15());
-    subhead.contents.push(get_2());
+  var getNoviembre2018 = function () {
 
-    return subhead;
-};
-
-var get_january_2018 = function () {
-    var get_26 = function () {
+    var get22 = function () {
         var content = {
-            newsid: get_newsid(),
-            content_head: '26 de enero de 2018',
-            //avatar: './images/avatar/FernandoLopezPalao.jpg',
-            //avatar_text: 'Fernando Lopez Palao',
-            post_title: 'ACTA FUNDACIONAL DE LA ASOCIACIÓN',
-            post_author: 'Secretario',
-            post_category_ref: './donate',
-            post_category: 'Alta socio',
-            post_category_style: '#03a85f',
-            post_description: 'El pasado día 26 de enero de 2018 se firmó el acta fundacional de la asociación. Han sido 3 semanas muy intensas de debates, opiniones, risas y porque no decirlo discusiones. Por fin se llegó a un acuerdo en los <a style="font-weight: bold;" href="https://www.dropbox.com/s/kc8rr5zm0nkx1zu/Estatutos%20y%20Acta%20fundacional%20-FIRMADOS.pdf?dl=0"> estatutos</a> y se firmó, un pequeño gran logro. Desde la Junta Directiva estamos muy ilusionados con la asociación, esperamos contar contigo.'
-        };
-
-        return content;
-    };
-
+          newsid: news2017.get_newsid(),
+          content_head: '22 de Noviembre de 2018',
+          post_title: 'Compromiso de Pedro Sánchez y Angel garrido para desbloquear la variante a la A-1',
+          post_author: 'Presidente',
+          post_category_ref: './alta',
+          post_category: 'Noticia',
+          post_category_style: '#555555',
+          post_description: '<p>El 22 de Noviembre, El proyecto de la variante de la A-1 despega: el presidente Pedro Sánchez se ha comprometido ante el jefe del Ejecutivo regional, Ángel Garrido, a que se desbloquee esta iniciativa.'
+          +'<br> <a target="_blank" style="color:#ed6d05;" href=https://www.abc.es/espana/madrid/abci-angel-garrido-penultimo-presidente-visita-moncloa-201811220203_noticia.html" rel="noreferrer">Ángel Garrido arranca a Sánchez el compromiso de desbloquear la variante de la A-1</a>'
+  
+        }
+        return content
+      }
+   
+  
     var subhead = {
-        content_subhead: 'Enero 2018',
-        contents: []
-    };
+      content_subhead: 'Noviembre 2018',
+      contents: []
+    }
+  
+    subhead.contents.push(get22())
+      
+    return subhead
+  }  
 
-    subhead.contents.push(get_26())
+var getOctubre2018 = function () {
+    var get25 = function () {
+      var content = {
+        newsid: news2017.get_newsid(),
+        content_head: '25 de Octubre de 2018',
+        post_title: 'Reunión de vecinos de club de campo con el Alcalde de San Sebastián de los Reyes',
+        post_author: 'Presidente',
+        post_category_ref: './alta',
+        post_category: 'Reunión',
+        post_category_style: '#555555',
+        post_description: '<p>El 25 de Octubre, se produce una reunión en el centro cívico del Alcalde y algunos miembros del ayuntamiento de San Sebastian de los Reyes con los vecinos de club de campo.'
+      }
+      return content
+    }
+    
+    var get22 = function () {
+        var content = {
+          newsid: news2017.get_newsid(),
+          content_head: '22 de Octubre de 2018',
+          post_title: 'AVACC aclara su postura',
+          post_author: 'Presidente',
+          post_category_ref: './alta',
+          post_category: 'Comunicado',
+          post_category_style: '#ed6d05',    
+          post_description: '<p>El 22 de Octubre, tras las últimas informaciones vertidas en algún medio de comunicación, la Asociación de Vecinos y Amigos de club de Campo, en adelante AVACC, quisiera aclarar su postura a continuación:'
+          + '<br>1) AVACC está a favor de solucionar los problemas de movilidad de la A-1 pero con soluciones reales como:'
+          + '<br>- la construcción de 3 carriles principales más 2 carriles de vía de servicio en cada sentido desde la Cuesta de los Dominicos hasta El Molar'
+          + '<br>- actuaciones de mejora y modernización de los accesos de la A-1 a San Sebastián de los Reyes y a Alcobendas'
+          + '<br>2) AVACC propone la ampliación del tren de cercanías a Algete, San Agustín de Guadalix y a El Molar con aparcamientos estratégicos, disuasorios, y gratuitos.'
+          + '<br>3) La variante propuesta de 9 kilómetros no tiene conexión directa con la M-40, salvo que se utilicen los peajes de la R-2 interior (hacia Madrid) o de la M-12. Por tanto, AVACC propone liberar dichos peajes, no siendo necesaria la construcción de la variante.'
+          + '<br>Todos los puntos anteriormente mencionados fueron remitidos por AVACC a los distintos partidos políticos con representación en San Sebastián de los Reyes, al Ministerio de Fomento y a la Comunidad de Madrid el pasado 5 de junio, 2018.'
+        }
+        return content
+      }
+  
+    var subhead = {
+      content_subhead: 'Octubre 2018',
+      contents: []
+    }
+  
+    subhead.contents.push(get25())
+    subhead.contents.push(get22())
+      
+    return subhead
+  }
 
-    return subhead;
+var getAgosto2018 = function () {
+    var get28 = function () {
+      var content = {
+        newsid: news2017.get_newsid(),
+        content_head: '28 de Agosto de 2018',
+        post_title: 'El gobierno central "frena" la variante de la A-1',
+        post_author: 'Presidente',
+        post_category_ref: './alta',
+        post_category: 'Noticia',
+        post_category_style: '#555555',
+        post_description: '<p>El 28 de Agosto, se publica els iguiente artículo:' +            
+              '<a target="_blank" style="color:#ed6d05;" href="https://www.abc.es/espana/madrid/abci-gobierno-central-frena-variante-201808280016_noticia.html" rel="noreferrer">El Gobierno central «frena» la variante de la A-1</a>'
+      }
+      return content
+    }
+    
+  
+    var subhead = {
+      content_subhead: 'Agosto 2018',
+      contents: []
+    }
+  
+    subhead.contents.push(get28())
+      
+    return subhead
+  }
+
+var getJunio2018 = function () {
+  var get13 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '13 de Junio de 2018',
+      post_title: 'Reunión del Partido Popular en San Sebastián de los Reyes',
+      post_author: 'Presidente',
+      post_category_ref: './alta',
+      post_category: 'Reunión',
+      post_category_style: '#555555',
+      post_description: '<p>El 13 de Junio, se reunieron en San Sebastián de los Reyes la consejera de transportes de la Comunidad de Madrid, el alcalde de Alcobendas y la portavoz del Partido Popular en San Sebastián de los Reyes para tratar el tema de la variante a la A1. Este acontencimiento ha sido publicado en varios medios de comunicación, y parece que ni la Comunidad de Madrid, ni el Partido Popular de San Sebastián de los Reyes, han atendido nuestras quejas y reclamaciones. Os dejamos aquí los enlaces para que podáis informaros:' +            
+            '<br><a target="_blank" style="color:#ed6d05;" href="http://cadenaser.com/emisora/2018/06/13/ser_madrid_norte/1528888674_222652.html" rel="noreferrer">Cadena Ser</a>' +
+            '<br><a target="_blank" style="color:#ed6d05;" href="http://m.telemadrid.es/noticias/madrid/noticia/la-comunidad-reclama-fomento-que-comience-trabajar-por-la-futura-variante-de" rel="noreferrer">Telemadrid</a> '+
+            '<br><a target="_blank" style="color:#ed6d05;" href="https://www.larazon.es/local/madrid/san-sebastian-frena-la-variante-de-la-a-1-DH18688957" rel="noreferrer">La razón</a></p>'
+    }
+    return content
+  }
+  
+var get18 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '18 de Junio de 2018',
+      post_title: 'Comunicado oficial',
+      post_author: 'Presidente',
+      post_category_ref: './alta',
+      post_category: 'Comunicado',
+      post_category_style: '#ed6d05',
+      post_description: '<p>'+
+            'AVACC, como representante y defensor de los intereses de los vecinos de Club de '+
+            'Campo, ha demostrado en multitud de reuniones con distintos estamentos políticos y medios '+
+            'de comunicación locales, su oposición frontal de la implantación del entronque llamado '+
+            '“NUDO CLUB DE CAMPO”, en la nacional A1, prevista su ubicación en las inmediaciones de la '+
+            'urbanización Club de Campo, del término municipal de San Sebastián de los Reyes.<br><br>'+
+            'Entendemos que éste entronque, trasladará a las diversas urbanizaciones del norte del '+
+            'municipio, los perjuicios cotidianos como ruidos, contaminación, atascos superiores a los '+
+            'sufridos en la actualidad.<br><br>'+
+            'El origen de los atascos están ocasionados en los extremos de la A1, hacia el norte en '+
+            'el municipio de San Agustín del Guadalix y hacia el sur se encuentra en los accesos de los '+
+            'polígonos de Alcobendas, accesos de M40 (A6 y A2) y entrada de Madrid.<br><br>'+
+            'Una solución, es eliminando el peaje de la R2, los vehículos podrían tomar la salida de '+
+            'la M-50 para acceder a la R2 y con ello eliminaríamos definitivamente el nudo Club de Campo '+
+            'sin obras y sin costes económicos.<br><br>'+
+            'Otra solución, está en habilitar tres carriles sentido norte y tres carriles sentido sur, '+
+            'además de las correspondientes vías de servicio.<br><br>'+
+            'Por ello, solicitamos el apoyo de todos los partidos políticos, empresas y '+
+            'urbanizaciones de nuestra localidad, haciendo un frente común.<br>'+
+
+            '<br><br>LA DIRECCIÓN EJECUTIVA'+
+        '</p>'
+    }
+    return content
+  }
+
+  var subhead = {
+    content_subhead: 'Junio 2018',
+    contents: []
+  }
+
+  subhead.contents.push(get18())
+  subhead.contents.push(get13())
+  
+  return subhead
 }
 
-var get_december_2017 = function () {
+var getMarzo2018 = function () {
+  var get9 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '9 de marzo de 2018',
+      post_title: 'Presentación de AVACC en club de campo',
+      post_author: 'Presidente',
+      post_category_ref: './alta',
+      post_category: 'Reunión en el centro cívico',
+      post_category_style: '#03a85f',
+      post_description: '<div class="post-images pure-g">' +
+                '<div class="pure-u-1 pure-u-md-1-2">' +
+                    '<div class="pure-g">' +
+                        '<div class="pure-u-1 pure-u-md-1-2">' +
+                            '<a href="./images/reunion_20180309/r1.jpg"><img alt="reunión" class="pure-img-responsive" src="./images/reunion_20180309/r1.jpg"></a>' +
+                            '<div class="post-image-meta">' +
+                                '<h3 style="color:white; font-weight: bold;">Asociate</h3>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="pure-u-1 pure-u-md-1-2">' +
+                            '<div class="pure-g">' +
+                                '<div class="pure-u-1 pure-u-md-1-2">' +
+                                    '<a href="./images/reunion_20180309/r2.jpg"><img alt="reunión" class="pure-img-responsive" src="./images/reunion_20180309/r2.jpg"></a>' +
+                                    '<div class="post-image-meta">' +
+                                        '<h3 style="color:white; font-weight: bold;">AVACC</h3>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="pure-u-1 pure-u-md-1-2">' +
+                                    '<a href="./images/reunion_20180309/r3.jpg"><img alt="reunión" class="pure-img-responsive" src="./images/reunion_20180309/r3.jpg"></a>' +
+                                    '<div class="post-image-meta">' +
+                                        '<h3 style="color:white; font-weight: bold;">Por ti</h3>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="pure-u-1 pure-u-md-1-1">' +
+                                    '<a href="./images/reunion_20180309/r4.jpg"><img alt="reunión" class="pure-img-responsive" src="./images/reunion_20180309/r4.jpg"></a>' +
+                                    '<div class="post-image-meta">' +
+                                        '<h3 style="color:white; font-weight: bold;">Club Campo</h3>' +
+                                    '</div><p></p>' +
+                                '</div>' +
+                                '<div class="pure-u-1 pure-u-md-1-1">' +
+                                    '<a href="./images/reunion_20180309/r5.jpg"><img alt="reunión" class="pure-img-responsive" src="./images/reunion_20180309/r5.jpg"></a>' +
+                                    '<div class="post-image-meta">' +
+                                        '<h3 style="color:white; font-weight: bold;">Reunión</h3>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="pure-u-1 pure-u-md-1-2">' +
+                    '<p>Hoy se presentó la Asociación Vecinos y Amigos de Club de Campo.</p>' +
+                    '<p>Se expuso el <a target="_blank" style="color:#ed6d05;" href="https://twitter.com/intent/tweet?url=http://www.avacc.org/alta&amp;text=juntos+somos+más&amp;hashtags=NoalNudoClubdeCampo" rel="noreferrer"> #NoalNudoClubdeCampo</a>' +
+                    '<p>Se obtuvo el compromiso unánime de todos los asistentes, incluido el <span style="font-weight: bold;">Alcalde y del grupo de gobierno</span> para realizar las acciones oportunas en contra del nudo.</p>' +
+                    '<p>La decisión final la tienen los socios, se convocará una asamblea general extraordinaria donde entre otras cosas, se votará nuestra postura. Asociate y hazte oir.</p>' +
+                '</div>' +
+                '<div class="pure-u-1 pure-u-md-1-1">' +
+                    '<p style="font-style: italic; text-decoration: underline;">Los asistentes de la reunión manifestaron la necesidad de ir por la vía legal, que implica una necesidad de dotarnos con fondos económicos significativas.</p>' +
+                    '<p>Se prevé la presentación del ante-proyecto en junio 2018, abriendo <span style="font-weight: bold;">alegaciones en julio-agosto 2018.</span></p>' +
+                '</div></div>' +
+                '<div><h2>¡¡Asóciate!!</h2></div>' +
+                '<p>La presentación <a target="_blank" href="https://www.dropbox.com/s/z2e5q3iddjvzm6s/AVACC_v4-socios.pdf?dl=0">aquí</a></p>' +
+                '<p>Plan de Infraestructuras, Transporte y Vivienda (PITVI) 2012 - 2024 <a target="_blank" href="http://www.fomento.gob.es/mfom/lang_castellano/planes/pitvi/pitvi_docu/">aquí</a></p>'
+    }
+    return content
+  }
+  var get2 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '2 de marzo de 2018',
+      post_title: 'Presentación de AVACC en el ayuntamiento',
+      post_author: 'Tesorera',
+      post_category_ref: './alta',
+      post_category: 'Reunión',
+      post_category_style: '#03a85f',
+      post_description: '<div class="post-images pure-g">' +
+                '<div class="pure-u-1 pure-u-md-1-2">' +
+                    '<a href="./images/reunion_20180302.jpg"><img alt="reunión" class="pure-img-responsive" src="./images/reunion_20180302.jpg"></a>' +
+                    '<div class="post-image-meta">' +
+                        '<h3 style="color:white; font-weight: bold;">Compromiso</h3>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="pure-u-1 pure-u-md-1-2">' +
+                    '<p>Se mantuvo una reunión con parte del grupo de gobierno y algunos técnicos del ayuntamiento de San Sebastián de los Reyes en donde:</p>' +
+                    '<ol>' +
+                        '<li>Se presentó a la asociación</li>' +
+                        '<li>Se consiguió el compromiso del alcalde de aceptar la decisión de los miembros de la asociación</li>' +
+                        '<li>Que estará presente en la reunión del día 9 para exponer sus reuniones a los vecinos.</li>' +
+                    '</ol>' +
+                    '<br><a target="_blank" href="https://www.dropbox.com/s/7uy7aduo2yvkz7v/Boletin%2301-2018Marzo.pdf?dl=0">Boletín marzo</a>' +
+                    '<br><a target="_blank" style="color:#ed6d05;" href="https://twitter.com/intent/tweet?url=http://www.avacc.org/alta&amp;text=juntos+somos+más&amp;hashtags=NoalNudoClubdeCampo" rel="noreferrer"> #NoalNudoClubdeCampo</a>' +
+                '</div></div>'
+    }
+    return content
+  }
 
-    var get_20 = function () {
-        var content = {
-            newsid: get_newsid(),
-            content_head: '20 de diciembre de 2017',
-            avatar: './images/avatar/JoseAndresGomezTovar.jpeg',
-            avatar_text: 'Jose Andres Gomez Tovar',
-            post_title: 'Reunión información variante A-1',
-            post_author: 'José Andrés Gómez. Vocal',
-            post_category_ref: './donate',
-            post_category: 'Progreso SI. Perjudicar NO',
-            post_category_style: '#ed6d05',
-            showHide_id: get_showHide_id(),
-            post_description: '<div class="post-images pure-g"><div class="pure-u-1 pure-u-md-1-2"><p>Pediros en primer lugar perdón porque es una reflexión <span style="font-weight: bold;">“personal”</span> que tiene peros y es que, puede que algún dato este sacado de contexto, pero es la sensación que algunos tenemos conclusiones que se sacan de las reuniones del pasado día 12 y 20 de diciembre.</p><ol><li>El proyecto de la <span style="font-weight: bold;">variante A-1 es necesaria</span> (eso lo vivimos todos con atascos de entrada y salida a distintas horas y distintos días) y al parecer es un proyecto prioritario para fomento (se va a ejecutar si o sí).</li><li>El estudio de la variante A-1, la futura M15, se basa en unos <span style="font-weight: bold;">datos antiguos/obsoletos/inválidos</span>. No se sabía que exista una población en club de campo, no se tenían los censos actualizados...</li></ol></div><div class="pure-u-1 pure-u-md-1-2"><a href="./images/opcion_3.jpg"><img alt="Pagina 16" class="pure-img-responsive" src="./images/opcion_3.jpg"></a><div class="post-image-meta"><h3 style="color:white; font-weight: bold;">Aquí vive gente</h3></div></div><div class="pure-u-1 pure-u-md-1-1"><p>Una vez que saben de nuestra existencia, se plantean tres opciones:</p><ol><li>Desviar la carretera por una zona no residencial (en el KM 27 más o menos). Descartada porque cruza el rio Jarama 2 veces y los ecologistas hacen mucho ruido, están unidos, les tienen miedo.</li><li>Desviar la carretera en el km 25. Esta opción es más cara que la opción 3.</li><li>En lugar de puente túnel. Esta es la que parece que se pueden plantear como alternativa porque no es muy cara.</li></ol><p>No se hablo en ningún momento de que es lo mejor para:</p><ul><li style="text-decoration: underline wavy green;">las familias de la zona.</li><li style="text-decoration: underline wavy green;">la carretera, el trafico, los vehículos, las personas que viajan de un sitio a otro.</li><li style="text-decoration: underline wavy green;">los profesores y alumnos del colegio (los niños pueden vivir un infierno de 65db todos los días a todas las horas).</li></ul><p>Mejorar la carretera es necesario, pero no de cualquier manera y no acosta, en perjuicio de otros. El problema de tener un nudo en la urbanización es: que si es elevado mete ruido, contaminación, si es subterráneo puede generar atascos (pasas de 120 km/h a 70 km/h), y nuestras viviendas están condenadas al uso del coche sí o si, y ya tenemos un carril condenado todas las mañanas por que todos dejamos a los niños en el colegio desde el lateral, pero no creo que soporte más atascos.</p><p style="font-size: 50px;">Imagináis que pasaría si tenemos “más caravana” para salir de la rotonda de la urbanización… que pasaría si los niños tiene que soportar ruidos de rodadura que viajan de lado a lado de la urbanización.</p><p>Muchos grupos y organización ya se movieron, consiguieron meter la presión necesaria para que se les tenga en cuenta, que como saben dan problemas, pues se llegan a acuerdos para conseguir ejecutar la tan necesaria y prioritaria obra.</p><p>Por delante no hay opciones hasta el RACE, por detrás, Heineken ya tiene pactado el trazado, pero en club de campo y Trinity estamos en las manos de unas personas que no sabían que existíamos hasta el día 12 de diciembre mucho después del primer pre-proyecto).</p></div></div><p>La convocatoria <a href="https://www.dropbox.com/s/pd18ewomk1jbhl2/reunion_20171220_1.pdf?dl=0">aquí</a></p><p>Los distintos trazados <a href="https://www.dropbox.com/s/ba03kxuw46u9b1e/reunion_20171220_2.pdf?dl=0">aquí</a></p>'
-        };
+  var get1 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '1 de marzo de 2018',
+      post_title: 'Reunión con la Entidad de Conservación de Club de Campo',
+      post_author: 'Secretario',
+      post_category_ref: './alta',
+      post_category: 'Unidos',
+      post_category_style: '#555555',
+      post_description: '<div class="post-images pure-g">' +
+            '<div class="pure-u-1 pure-u-md-1-2">' +
+                '<a href="./images/ec_cc.jpg"><img alt="Pagina 16" class="pure-img-responsive" src="./images/ec_cc.jpg"></a>' +
+                '<div class="post-image-meta">' +
+                    '<h3 style="color:white; font-weight: bold;">Unidad</h3>' +
+                '</div>' +
+            '</div>' +
+            '<div class="pure-u-1 pure-u-md-1-2">' +
+                '<p>El pasado día 1 de marzo se mantuvo una reunión con la Entidad de Conservación de Club de Campo donde les hemos pedido colaboración con nuestra asociación (AVACC).' +
+                ' La Entidad ha aceptado colaborar plenamente con nosotros dentro de sus posibilidades, sobre todo en comunicación (redes sociales) y en dar a conocer la asociación (AVACC) a todos los vecinos.<br>' +
+                '<a target="_blank" style="color:#ed6d05;" href="https://twitter.com/intent/tweet?url=http://www.avacc.org/alta&amp;text=juntos+somos+más&amp;hashtags=NoalNudoClubdeCampo" rel="noreferrer"> #NoalNudoClubdeCampo</a>' +
+                '</p>' +
+            '</div></div>'
+    }
+    return content
+  }
 
-        return content;
-    };
+  var subhead = {
+    content_subhead: 'Marzo 2018',
+    contents: []
+  }
 
-    var subhead = {
-        content_subhead: 'Diciembre 2017',
-        contents: []
-    };
+  subhead.contents.push(get9())
+  subhead.contents.push(get2())
+  subhead.contents.push(get1())
 
-    //subhead.contents.push(get_20())
+  return subhead
+}
 
-    return subhead;
-};
+var getFebruary2018 = function () {
+  var get28 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '28 de febrero de 2018',
+      post_title: 'Reunión con la Consejería de Transporte, Infraestructura y Vivienda',
+      post_author: 'Junta Directiva',
+      post_category_ref: './alta',
+      post_category: 'Juntos somos más',
+      post_category_style: '#03a85f',
+      post_description: '<p>El 28 de febrero cinco miembros de la asociación de vecinos (AVACC) se reunirán con Consejería de Transporte, Infraestructura y Vivienda para saber la situación real de la variante que afecta al Nudo Club de Campo.' +
+            ' Hemos preparado una batería de preguntas con todas las dudas y preocupaciones que nos supone esta obra a los vecinos de Club de Campo.' +
+            ' En los próximos días haremos una reunión con todos vosotros para explicaros la situación actual en la que nos encontramos.' +
+            ' Muchas gracias y recordar que todos <span style="font-weight: bold;">juntos somos más fuertes</span>.<br>' +
+            '<a target="_blank" style="color:#ed6d05;" href="https://twitter.com/intent/tweet?url=http://www.avacc.org/alta&amp;text=juntos+somos+más&amp;hashtags=NoalNudoClubdeCampo" rel="noreferrer"> #NoalNudoClubdeCampo</a></p>'
+    }
+    return content
+  }
 
-var get_november_2017 = function () {
+  var get15 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '15 de febrero de 2018',
+      post_title: 'Apertura de Cuenta Bancaria',
+      post_author: 'Tesorera',
+      post_category_ref: './donate',
+      post_category: 'Ayudanos. Ayudate',
+      post_category_style: '#ed6d05',
+      post_description: '<p>Se abrió la cuenta bancaria en el BBVA de Paracuellos de Jarama.<br> <a href="/donate">IBAN: ES27 0182 8085 4702 0162 8042</a></p>'
+    }
+    return content
+  }
 
-    var get_27 = function () {
-        var content = {
-            newsid: get_newsid(),
-            content_head: '27 de noviembre de 2017',
-            post_title: 'Reunión centro sociocultural. La ALTERNATIVA ELEGIDA',
-            post_author: 'Junta Directiva',
-            post_category_ref: './donate',
-            post_category: 'Quiero ayudar',
-            post_category_style: '#ed6d05',
-            showHide_id: get_showHide_id(),
-            post_description: '<div class="post-images pure-g"><div class="pure-u-1 pure-u-md-1-2"><p><a href="http://www.fomento.es/Carreteras/EI1-M-075/DOC02_PLANOS/02%20PlanoSituacion/02H01-H01.pdf">La ALTERNATIVA ELEGIDA</a> para la variante de la <a href="http://www.fomento.es/MFOM/LANG_CASTELLANO/ATENCION_CIUDADANO/PARTICIPACION_PUBLICA/EI-M-075/default.htm">autovía A1</a> afectará directamente a multitud de hogares de San Sebastián de los Reyes, en concreto a la urbanización Club de Campo. Dicha alternativa elegida trasmitiría a las viviendas de la mencionada urbanización ruidos de rodadura, de motores y aerodinámicos de miles de vehículos, teniendo en cuenta de que puede haber unos 75.000 vehículos al día circulando, entre los ligeros y los pesados. En concreto se eligió una opción que eleva una nueva carretera unos 9 m, probablemente por ser la que menor coste económico comporta.</p></div><div class="pure-u-1 pure-u-md-1-2"><a href="./images/web_bk_0.jpg"><img alt="Pagina 16" class="pure-img-responsive" src="./images/web_bk_0.jpg"></a><div class="post-image-meta"><h3 style="color:white; font-weight: bold;">Progreso si, salud también</h3></div></div><div class="pure-u-1 pure-u-md-1-1"><p>En los años 90, el Ministerio de Fomento no había previsto una alternativa a la autovía A-1 entre las nuevas autopistas radiales de peaje de Madrid; por esta razón, desde el año 2001 se han venido proponiendo diversos estudios en el ‘corredor’ de la A-1 para la ejecución de un nuevo eje alternativo -que se denominó ‘R-1’-, que fuera capaz de resolver o, al menos, paliar la progresiva sobresaturación de la Autovía del Norte en los tramos más cercanos a la M-40. En el año 2006 se aprobó definitivamente el Estudio Informativo del trazado de dicha alternativa, y en el 2007 se aprobó el Antoproyecto y se licitó la Concesión para la contrucción y explotación (como autovía de peaje) del tramo Eje Aeropuerto-El Molar, concurso que finalmente quedó desierto. La crisis aparco el proyecto durante 8 años y, en el año 2015, la Demarcación de Carreteras lo volvió a poner en marche pero, ante la prevista runia de la radiales madrileñas, la planteó como ‘Variante de la Autovía A-1’; sin peajes, señalando dos ‘Corredores’ de 10km a ambos lados de la A-1 para estudiar trazados alternativos. La opción del Corredor del Oeste, que transcurría por el Parque de la Cuenca Alta del Manzanares, no representaba una solución en absoluto. En el corredor del Este, son cuatro los trazados analizados, todos partiendo del Eje Barajas. A uno de estos se accede directamente por Paracuellos de Jarama hasta El Molar o San Agustín de Guadalix. Al otro se llega al completar las inacabadas vías de servicio de la A-1. Otra reproduce la antigua R-1, lo que provocaría problemas en las zonas de Mangranillo, Pfizer y Heineken. La última de estas ha sido la alternativa elegida, probablemente por ser la que menor coste económico comporta pero sin tener en cuenta los perjuicios que causaría, ya que se trata de la única de todas las opciones existentes que provoca un auténtico embudo de carriles y que, además, con ocho metros de altura total, supera la de la loma de cinco metros que protege del ruido a la urbanización Club de Campo. En estas condiciones, dicha alternativa elegida trasmitiría a las viviendas de la mencionada urbanización ruidos de rodadura, de motores y aerodinámicos de miles de vehículos, teniendo en cuenta de que puede haber unos 75.000 vehículos al día circulando, entre los ligeros y los pesados. Aparte de la contaminación acústica exponencial que provocaría, dicha opción no resolvería en absoluto los problemas de seguridad de la zona, sino todo lo contrario. De hecho, esta infraestructura dificultaría con creces el uso del nudo de acceso al Club de Campo, a las instalaciones de la real Sociedad Hípica y al aparcamiento del Circuito del RACE, ocupando físicamente los jardines de la Quinta e invadiendo destructivamente tanto la Quinta como el Trinity College. Hay que tener en cuenta, además, que el Ministerio de Fomento desechó la ejecución de las vías de servicio de la A-1 en el tramo M-40 M-100 (correspondiente a la salida de Algete), unas vías que son absolutamente necesarias en la cercanía de los cascos urbanos de San Sebastián de los Reyes y Alcobendas, que es precisamente donde faltan, lo que completa un escenario enormemente perjudicial para el municipio y, en particular, para los vecinos de la citada urbanización.</p></div></div><h4>¿Quieres los enlaces de fomento?</h4><p><a href="http://www.fomento.es/MFOM/LANG_CASTELLANO/ATENCION_CIUDADANO/PARTICIPACION_PUBLICA/EI-M-075/default.htm">Página de FOMENTO con el índice de descarga de la documentación del proyecto</a></p><p><a href="http://www.fomento.es/Carreteras/EI1-M-075/DOC02_PLANOS/02%20PlanoSituacion/02H01-H01.pdf">Planos. La línea verde es la que ha sido seleccionada</a></p><p><a href="http://www.fomento.es/Carreteras/EI1-M-075/DOC01_MEMORIA%20Y%20ANEJOS/Anejo%2008_Trazado.pdf">Anejo 8, TRAZADO. Ver Pág. 14 y 42</a></p><p><a href="http://www.fomento.es/Carreteras/EI1-M-075/DOC02_PLANOS/03%20DefiniAlternaSeleccionada/0301%20PlanoConjunto/0301H01-H01.pdf">Alternativa SELECCIONADA. Supone los tramos: 1, 2, 6, C y D. El tramo 6 es el que afecta a Club de Campo (H04)</a></p><div class="pure-menu pure-menu-horizontal"><h4>Síguenos en:</h4><ul><li class="pure-menu-item"><ul class="social-icons"><li><a href="https://www.facebook.com/AVACC-1639021659525422"><i class="fa fa-facebook"></i></a></li><li><a href="https://twitter.com/ava_clubcampo?ref_src=twsrc%5Etfw"><i class="fa fa-twitter"></i></a></li><li><a href="https://www.instagram.com/ava_clubcampo/"><i class="fa fa-instagram"></i></a></li></ul></li><li style="margin-top: 2em;"><a href="mailto:contactar@avacc.org">contactar@avacc.org</a></li></ul></div>'
-        };
+  var get2 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '2 de febrero de 2018',
+      post_title: 'Registro de la asociación',
+      post_author: 'Vice-Tesorero',
+      post_category_ref: './donate',
+      post_category: 'Donar',
+      post_category_style: '#555555',
+      post_description: '<p>El pasado día 2 de febrero de 2018 se obtuvo el identificador provisional de Asociación. Ahora vamos a cerrar la web y el banco para poder contar con todos vosotros.</p>'
+    }
+    return content
+  }
 
-        return content;
-    };
+  var subhead = {
+    content_subhead: 'Febrero 2018',
+    contents: []
+  }
 
-    var subhead = {
-        content_subhead: 'Noviembre 2017',
-        contents: []
-    };
+  subhead.contents.push(get28())
+  subhead.contents.push(get15())
+  subhead.contents.push(get2())
 
-    subhead.contents.push(get_27())
+  return subhead
+}
 
-    return subhead;
-};
+var getJanuary2018 = function () {
+  var get26 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '26 de enero de 2018',
+      post_title: 'ACTA FUNDACIONAL DE LA ASOCIACIÓN',
+      post_author: 'Secretario',
+      post_category_ref: './donate',
+      post_category: 'Alta socio',
+      post_category_style: '#03a85f',
+      post_description: '<p>El pasado día 26 de enero de 2018 se firmó el acta fundacional de la asociación. Han sido 3 semanas muy intensas de debates, opiniones, risas y porque no decirlo discusiones.' +
+            ' Por fin se llegó a un acuerdo en los <a target="_blank" style="font-weight: bold;" href="https://www.dropbox.com/s/kc8rr5zm0nkx1zu/Estatutos%20y%20Acta%20fundacional%20-FIRMADOS.pdf?dl=0"> estatutos</a> y se firmó, un pequeño gran logro.' +
+            ' Desde la Junta Directiva estamos muy ilusionados con la asociación, esperamos contar contigo.</p>'
+    }
 
+    return content
+  }
 
+  var subhead = {
+    content_subhead: 'Enero 2018',
+    contents: []
+  }
 
-var get_june_2017 = function () {
+  subhead.contents.push(get26())
 
-    var get_16 = function () {
-        var content = {
-            newsid: get_newsid(),
-            content_head: '16 de junio de 2017',
-            post_title: 'El ayuntamiento defenderá los intereses del municipio en relación con la variante de la A-1',
-            post_author: 'Vice-Presidente',
-            post_category_ref: './donate',
-            post_category: 'Defendemos tu entorno',
-            post_category_style: '#555555',
-            showHide_id: get_showHide_id(),
-            post_description: '<div class="post-images pure-g"><div class="pure-u-1 pure-u-md-1-1"><a href="./images/plaza_junio.PNG"><img alt="Pagina 16" class="pure-img-responsive" src="./images/plaza_junio.PNG"></a><div class="post-image-meta"><h3 style="color:#ed6d05; font-weight: bold;">Ayuda al colegio. Ayúdate</h3></div></div></div><p>La revista completa <a href="https://www.dropbox.com/s/d4mc17p6mj3088h/plaza_junio_2017.pdf?dl=0">aquí</a></p>'
-        };
-
-        return content;
-    };
-
-    var subhead = {
-        content_subhead: 'Noviembre 2017',
-        contents: []
-    };
-
-    subhead.contents.push(get_16())
-
-    return subhead;
-};
+  return subhead
+}
 
 exports.get_news = function () {
-    var news = []
+  var news = []
 
-    news.push(get_february_2018());
-    news.push(get_january_2018());
-    news.push(get_december_2017());
-    news.push(get_november_2017());
-    news.push(get_june_2017());
+  news.push(getDiciembre2018())
+  news.push(getNoviembre2018())
+  news.push(getOctubre2018())
+  news.push(getAgosto2018())
+  news.push(getJunio2018())
+  news.push(getMarzo2018())
+  news.push(getFebruary2018())
+  news.push(getJanuary2018())
+  news.push(news2017.get_december_2017())
+  news.push(news2017.get_november_2017())
+  news.push(news2017.get_june_2017())
 
-    return news;
+  return news
 }

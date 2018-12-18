@@ -11,7 +11,7 @@ block append articles
                                 img(width="72" height="72" alt=content.avatar_text class="post-avatar" src=content.avatar)
                             h2(class="post-title")
                                 if (content.showHide_id != undefined)
-                                    a(href="#" style="color: black;" onclick="avacc_showHide('" + content.showHide_id + "'); return false;")= content.post_title
+                                    a(href="#" style="color: black;" onclick="avaccShowHide('" + content.showHide_id + "'); return false;")= content.post_title
                                 else
                                     .
                                         #{content.post_title}
@@ -23,14 +23,14 @@ block append articles
                                     a(class="post-category" href=content.post_category_ref)= content.post_category
                         if (content.showHide_id != undefined)
                             p(class="avacc_pLink")
-                                a(href="#" id=content.showHide_id+"-show" class="avacc_showLink" onclick="avacc_showHide('" + content.showHide_id + "'); return false;") más...
+                                a(href="#" id=content.showHide_id+"-show" class="avacc_showLink" onclick="avaccShowHide('" + content.showHide_id + "'); return false;") más...
 
                         div(id=content.showHide_id class=content.showHide_id!=undefined ? "avacc_more" : "")
                             if (content.showHide_id != undefined)
                                 p(class="avacc_pLink")
-                                    a(href="#" id=content.showHide_id + ".1-hide" class="avacc_showLink" onclick="avacc_showHide('" + content.showHide_id + "'); return false;") menos...
+                                    a(href="#" id=content.showHide_id + ".1-hide" class="avacc_showLink" onclick="avaccShowHide('" + content.showHide_id + "'); return false;") menos...
 
                             div(class="post-description")!= content.post_description
                                 if (content.showHide_id != undefined)
                                     p(class="avacc_pLink")
-                                        a(href="#" id=content.showHide_id + ".2-hide" class="avacc_showLink" onclick="avacc_showHide('" + content.showHide_id + "'); return false;") menos...
+                                        a(href="#" id=content.showHide_id + ".2-hide" class="avacc_showLink" onclick="avaccShowHide('" + content.showHide_id + "'); return false;") menos...

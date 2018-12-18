@@ -1,49 +1,51 @@
 .avacc_more {
-  display: none;
+    display: none;
 }
 
 .avacc_pLink {
-  text-align: right;
+    text-align: right;
 }
 
-.avacc_showLink, .avacc_hideLink {
-  font-size: 1em;
-  text-decoration: none;
-  /* RCB color: #36f;*/
-  color:#03a85f;
-  padding-left: 8px;
+.avacc_showLink,
+.avacc_hideLink {
+    font-size: 1em;
+    text-decoration: none;
+    /* RCB color: #36f;*/
+    color: #03a85f;
+    padding-left: 8px;
 }
 
-.avacc_showLink:hover, .avacc_hideLink:hover {
-  border-bottom: 1px dotted #36f;
+.avacc_showLink:hover,
+.avacc_hideLink:hover {
+    border-bottom: 1px dotted #36f;
 }
 
 .avacc_body {
-  /*background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat center center fixed; */
-  background: url(../images/grey_bg.png) no-repeat center center fixed;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-font-smoothing: antialiased;
+    /*background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat center center fixed; */
+    background: url(../images/grey_bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
 }
 
 .avacc_aside {
-  width: 80%;
-  margin: 0 auto;
-  /*
+    width: 80%;
+    margin: 0 auto;
+    /*
   background: rgba(34,177,55,0.2);
   #484848   rgb(72,72,72)
   */
-  background: rgba(72,72,72,0.2);
-  padding: 10px;
-  border: 3px solid #57A639;
-  border-radius: 10px/10px;
-  background-clip: padding-box;
-  text-align: left;
-  color: black;
+    background: rgba(72, 72, 72, 0.2);
+    padding: 10px;
+    border: 3px solid #57A639;
+    border-radius: 10px/10px;
+    background-clip: padding-box;
+    text-align: left;
+    color: black;
 }
+
 /*
 footer {
   width: 80%;
@@ -59,9 +61,7 @@ footer {
 
 .avacc_footer {
     margin-top: 15%;
-
     padding: 1em;
-
     background-color: #ECECEC;
     text-align: center;
     --border: 2px solid #fff;
@@ -78,13 +78,13 @@ footer {
 }
 
 .avacc_logo {
-  /*RCB max-height: 10em;*/
-  /*opacity: 0.5;*/
+    /*RCB max-height: 10em;*/
+    /*opacity: 0.5;*/
 }
 
 .custom-wrapper {
     /*background-color: #ffd390;*/
-    background-color: #555;    
+    background-color: #555;
     margin-bottom: 1em;
     -webkit-font-smoothing: antialiased;
     height: 2.1em;
@@ -149,17 +149,13 @@ footer {
 }
 
 @media (max-width: 47.999em) {
-
     .custom-menu-3 {
         text-align: left;
     }
-
     .custom-toggle {
         display: block;
     }
-
 }
-
 
 .main {
     padding: 2em;

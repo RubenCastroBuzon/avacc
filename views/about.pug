@@ -3,30 +3,34 @@ extend layout_about
 block body
     body
         div(class="header")            
-            div(class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed")                
-                a(href="/")
-                    img(class="" src="./images/__avacc-logo blanco.png" width="7%" height="7%" alt="AVACC")
-                //-    span(style="color: #ed6d05;") A
-                //-    span(style="color: #03a85f;") V
-                //-    span(style="color: #ed6d05;") A
-                //-    span(style="color: white") CC
-
-                ul(class="pure-menu-list")
-                    li(class="pure-menu-item")
-                        //pure-menu-selected
-                        a(href="/donate" class="pure-menu-link") Alta
-                    li(class="pure-menu-item")
-                        a(href="https://docs.google.com/forms/d/e/1FAIpQLSeVhq1uXu0V_uaEUxIOmP42W5aJQcdjgwCe4Cn7U861oAzRkw/viewform" class="pure-menu-link") Baja
+            div(class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed")
+                div(class="pure-g")
+                    div(class="pure-u-1 pure-u-md-1-2")
+                        a(href="/")
+                            img(class="" src="./images/__avacc-logo_blanco.png" width="96" height="40" alt="AVACC")
+                        //-
+                            div(class="pure-g")
+                                a(class="pure-menu-heading" href="/")
+                                    div(class="pure-u-1 pure-u-md-1-8")
+                                        img(class="pure-img-responsive" src="./images/__avacc-logo_blanco.png" alt="AVACC")
+                    div(class="pure-u-1 pure-u-md-1-2")
+                        ul(class="pure-menu-list")
+                            li(class="pure-menu-item")
+                                //pure-menu-selected
+                                a(target="_blank" href="./alta" class="pure-menu-link") Alta
+                            li(class="pure-menu-item")
+                                a(target="_blank" href="./baja" class="pure-menu-link") Baja
 
         div(class="splash-container")
             div(class="splash")
                 h1(class="splash-head") ¿Como sería tu calidad de vida?
                 p(class="splash-subhead").
-                    Sin el puente del KM 26.<br>
+                    Con un colegio lleno de ruidos y humos.<br>
                     Si quitan la loma que te protege.<br>
                     Con una carretera elevada.<br>
-                    Con atascos diarios cerca de tu casa.<br>
-                    Con un colegio lleno de ruidos y humos.
+                    Con el caos de un túnel.<br>
+                    Con una autopista de 80km/h.<br>
+                    Con atascos diarios cerca de tu casa.
                 p
                     a(href="/donate" class="pure-button pure-button-primary") Hazte Socio
 
@@ -35,37 +39,7 @@ block body
                 div(class="content-head is-center")
                     h2 Miembros de la Junta directiva                
                     div(class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-1" style="text-align: center")
-                        //-img(alt="Junta Directiva" class="pure-img-responsive" src="./images/junta_directiva.png")
                         img(alt="Junta Directiva" class="pure-img-responsive" src="./images/web-junta-directiva-avacc-img.png")
-                    //-
-                        h3
-                            spam(style="color: black;") Presidente: 
-                            spam Fernando Lopez-Palao Herrera-Davila 
-                        h3
-                            spam(style="color: black;") Vice-Presidente: 
-                            spam Juan Luís Merle García del Pino
-                        h3
-                            spam(style="color: black;") Secretario: 
-                            spam Jaime Moreno Alonso de Celada
-                        h3
-                            spam(style="color: black;") Vice-Secretario: 
-                            spam Henar Bonilla Martí
-                        h3
-                            spam(style="color: black;") Tesorero: 
-                            spam Bettina Marty Cuatico
-                        h3
-                            spam(style="color: black;") Vice-Tesorero: 
-                            spam Germán Alfredo Palma Roisman
-                        h3
-                            spam(style="color: black;") Vocales
-                            ul
-                                li Miguel Ángel Martín-Perdiguero
-                                li Marcial Zamorano Ontañón
-                                li José Andrés Gómez Tovar
-                                li Ruben Castro Buzón
-                                li Oscar Hidalgo Gonzalez
-                                li Francisco Jose Jurado Dominguez
-                                li Antonio Reyes Valverde
 
                 div(class="pure-g")
                     div(class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4")
@@ -100,7 +74,7 @@ block body
                 div(class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5")
                     h2(class="content-head content-head-ribbon") Nuestros principios
                     p.
-                        AVACC nace con el firme propósito de defender los intereses de todos los vecinos de la Urbanización Club de Campo de San Sebastián de los Reyes (Madrid). Nuestra principal inquietud hoy es la inminente obra de ampliación de la A1 y la construcción de la nueva variante porque NO queremos que nos perjudique en modo alguno. Necesitamos de tu colaboración. Asóciate y podremos defender mejor los intereses de todos.
+                        AVACC nace con el firme propósito de defender los intereses de todos los vecinos de la Urbanización Club de Campo de San Sebastián de los Reyes (Madrid). Nuestra principal inquietud hoy es la inminente obra de ampliación de la A1 y la construcción de la nueva variante porque NO queremos que nos perjudique en modo alguno, además de que cualquier actuación nos debe beneficiar, debemos poder disfrutarla. Necesitamos de tu colaboración. Asóciate y podremos defender mejor los intereses de todos.
                         Por supuesto, no queremos que nuestra actividad sea exclusivamente esta, aunque sea ahora nuestra prioridad. Pretendemos perdurar en el tiempo como una asociación vecinal sólida y fuerte ante el Ayuntamiento de San Sebastián de los Reyes y la Comunidad de Madrid, persiguiendo lo mejor para los vecinos de Club de Campo y para todos los amigos que nos visitan y quieran ayudarnos.
 
             div(class="content")
@@ -111,13 +85,13 @@ block body
                     div(class="l-box-lrg pure-u-1 pure-u-md-2-5")
                         ul(class="social-icons" style="text-align: center;")
                             li
-                                a(href="https://www.facebook.com/AVACC-1639021659525422")
+                                a(target="_blank" href="https://fb.me/ava.clubcampo")
                                     i(class="fa fa-facebook")
                             li
-                                a(href="https://twitter.com/ava_clubcampo?ref_src=twsrc%5Etfw")
+                                a(target="_blank" href="https://twitter.com/ava_clubcampo?ref_src=twsrc%5Etfw")
                                     i(class="fa fa-twitter")
                             li
-                                a(href="https://www.instagram.com/ava_clubcampo/")
+                                a(target="_blank" href="https://www.instagram.com/ava_clubcampo/")
                                     i(class="fa fa-instagram")
                     div(class="l-box-lrg pure-u-1 pure-u-md-1-5").
                         Nuestro correo electrónico <a href="mailto:contactar@avacc.org" style="color: #03a85f;"> contactar@avacc.org</a>
@@ -126,7 +100,7 @@ block body
                             h4 Más contactos
                             p.
                                 Hablaremos con la Entidad de Conservación, pregúntales.<br>
-                                Hablaremos con los presidentes de las comunidades, pregúntales<br>
+                                Hablaremos con los presidentes de las comunidades, pregúntales<br><br>
 
                     //-
                         div(class="l-box-lrg pure-u-1 pure-u-md-2-5")
@@ -157,5 +131,7 @@ block body
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua.
 
-            div(class="footer l-box is-center").
-                #NoalNudoClubdeCampo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Urbanización Club de Campo. San Sebastián de los Reyes
+            div(class="footer l-box is-center")
+                a(target="_blank" href="https://twitter.com/intent/tweet?url=http://www.avacc.org/alta&amp;text=juntos+somos+más&amp;hashtags=NoalNudoClubdeCampo" rel="noreferrer") #NoalNudoClubdeCampo
+                p.
+                    Urb. Club de Campo. San Sebastián de los Reyes

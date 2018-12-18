@@ -6,46 +6,66 @@ block body
             div(id="layout" class="pure-g")
                 aside(class="sidebar pure-u-1 pure-u-md-1-4")
                     header(class="header")
+                        //-
+                            nav(class="nav")
+                                ul(class="nav-list")
+                                    li(class="nav-item-border")
+                                        a(target="_blank" href="https://www.facebook.com/ava.clubcampo/" data-tooltip="contamos contigo" class="pure-button") <span style="color: #ed6d05;">Reunión de vecinos.</span><br> Viernes, 9 de marzo de 2018. 19:00 h.<br> Centro Cívico de la Urb. Club de Campo
+                                    li(class="nav-item-border")                                    
+                                        div(class="pure-button" data-tooltip="contamos contigo" style="border: 2px solid rgb(3, 166, 95); padding: 11px;")
+                                            h3(class="" style="font-weight: bold; margin-top: 1em; color: #ed6d05;") Reunión
+                                            h5(class="" style="font-size: small; font-weight: bold; margin-top: 1em;") Viernes, 9 de marzo.
+                                            h6(class="" style="font-size: small; font-weight: bold; margin-top: 1em;") 19:00 h.
+                                            h6(class="" style="font-size: small; font-weight: bold; margin-top: 1em;") Centro Cívico Urb.
+                                    //-
+                                        li(class="nav-item-border")
+                                            a(href="./donate" class="pure-button" data-tooltip="juntos somos más" style="background: #8b8a8a;") Hazte socio
+                        div(style="float:right; margin-right:10px;")
+                            h3(style="text-align: center; padding: 5px;" class="button-avacc")
+                                if ((login != undefined) && login)
+                                    a(style="color: white;" href="./logout") logout
+                                else 
+                                    a(style="color: white;" href="./login") login
+                            <br>
+                            if(user != undefined)
+                                h3(style="color: #ed6d05;") Hola #{user.displayName}
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                         h1(class="brand-title" data-tooltip="es responsabilidad de todos" style="text-align: center;")
-                            img(class="avacc_logo pure-img" src="./images/__avacc-logo blanco.png" alt="AVACC")
-                            //-a(href="/about" style="text-decoration: none;")
-                               //- span(style="color: #ed6d05;") A
-                               //- span(style="color: #03a85f;") V
-                               //- span(style="color: #ed6d05;") A
-                               //- span(style="color: white") CC
+                            img(class="avacc_logo pure-img" src="./images/__avacc-logo_blanco.png" alt="AVACC")
                         //-
                             h3(class="brand-tagline")                            
                                 a(href="/about") <span style="color: #ed6d05;">A</span>sociación de <span style="color: #03a85f;">V</span>ecinos y <span style="color: #ed6d05;">A</span>migos de <br><span style="color: black;">C</span>lub de <span style="color: black;">C</span>ampo
                                 a(href="/about") Asociación de Vecinos y Amigos de <br>Club de Campo
-                        h3(style="font-weight: bold; margin-top: 1em;" class="pure-menu-item")
-                            a(href="./donate" class="pure-menu-link" data-tooltip="juntos somos mas") Hazte socio
+                        h3(style="font-weight: bold; margin-top: 1em;" class="brand-tagline pure-menu-item")
+                            a(href="./donate" class="pure-menu-link" data-tooltip="juntos somos más") Hazte socio
                         h3(style="font-weight: bold; margin-top: 1em;" class="pure-menu-item")
                             a(href="./about" class="pure-menu-link" data-tooltip="es responsabilidad de todos") Sobre nosotros
                         p(style="font-style: italic; margin-top: 1em;" class="pure-menu-item")
-                            <a href="https://www.change.org/p/ministerio-de-fomento-no-a-la-alternativa-elegida-variante-autov%C3%ADa-a1" class="pure-menu-link" data-tooltip="NO al nudo Club de Campo"><span style="color: #ed6d05;">VOTA</span> ¡NO!</a>
+                            a(target="_blank" href="https://www.change.org/p/ministerio-de-fomento-no-a-la-alternativa-elegida-variante-autov%C3%ADa-a1" class="pure-menu-link" data-tooltip="NO al nudo Club de Campo") <span style="color: #ed6d05;">VOTA</span> ¡NO!
                         nav(class="nav" style="margin-top: 1em;")
                             ul(class="nav-list")                                
                                 li(class="nav-item" style="margin-left: 0.3em; margin-right: 0.3em;")
-                                    a(href="https://www.facebook.com/AVACC-1639021659525422")
+                                    a(target="_blank" href="https://fb.me/ava.clubcampo")
                                         i(class="fa fa-facebook")
                                 li(class="nav-item" style="margin-left: 0.3em; margin-right: 0.3em;")
-                                    a(href="https://twitter.com/ava_clubcampo?ref_src=twsrc%5Etfw")
+                                    a(target="_blank" href="https://twitter.com/ava_clubcampo?ref_src=twsrc%5Etfw")
                                         i(class="fa fa-twitter")
                                 li(class="nav-item" style="margin-left: 0.3em; margin-right: 0.3em;")
-                                    a(href="https://www.instagram.com/ava_clubcampo/")
+                                    a(target="_blank" href="https://www.instagram.com/ava_clubcampo/")
                                         i(class="fa fa-instagram")
                                 li(style="margin-top: 2em;")
                                     a(href="mailto:contactar@avacc.org" style="text-decoration: none;color:#03a85f;") contactar@avacc.org
 
                 div(class="content pure-u-1 pure-u-md-3-4")
                     a(class="avacc_img pure-g" href="/about")
-                        div(class="pure-u-1 pure-u-md-1-3")
-                        //-img(class="avacc_logo pure-img" src="./images/__avacc-logo-texto_h250.png" alt="AVACC")
-                        picture
-                            source(media="(min-width: 800px)" scrset="./images/__avacc-logo-texto_h250.png")
-                            //-source(media="(min-width: 600px)" scrset="./images/__avacc-logo_300_200.png")
-                            img(class="avacc_logo pure-img" src="./images/__avacc-logo-texto_h250.png" alt="AVACC")
-                        div(class="pure-u-1 pure-u-md-1-3")
+                        div(class="pure-u-1 pure-u-md-1-5")
+                        div(class="pure-u-1 pure-u-md-3-5")
+                            img(class="avacc_logo pure-img-responsive" src="./images/__avacc-logo-texto_h250.png" alt="AVACC")
+                        div(class="pure-u-1 pure-u-md-1-5")
                     div
                         article(class="posts")
                             h1(class="content-subhead") Sobre nosotros
@@ -58,9 +78,12 @@ block body
                             div(style="font-weight: bold;" class="pure-menu pure-menu-horizontal")
                                 ul
                                     li(class="pure-menu-item")
-                                        a(href="http://purecss.io/" class="pure-menu-link") Pure-CSS
+                                        a(href="./about" class="pure-menu-link") Sobre nosotros
                                     li(class="pure-menu-item")
-                                        a(href="https://github.com/joseAndresGomezTovar/avacc_app" class="pure-menu-link") GitHub
+                                        a(target="_blank" href="./alta" class="pure-menu-link") Darme de Alta
                                     li(class="pure-menu-item")
-                                        a(href="https://docs.google.com/forms/d/e/1FAIpQLSeVhq1uXu0V_uaEUxIOmP42W5aJQcdjgwCe4Cn7U861oAzRkw/viewform" class="pure-menu-link") Darme de baja
-                                    li #NoalNudoClubdeCampo<br><br>Urbanización Club de Campo<br> San Sebastián de los Reyes (Madrid)<br> Ctra. A1, Km 26.
+                                        a(target="_blank" href="./baja" class="pure-menu-link") Darme de baja
+                                    li
+                                        a(target="_blank" href="https://twitter.com/intent/tweet?url=http://www.avacc.org/alta&amp;text=juntos+somos+más&amp;hashtags=NoalNudoClubdeCampo" rel="noreferrer") #NoalNudoClubdeCampo
+                                        p.
+                                            Urbanización Club de Campo<br> San Sebastián de los Reyes (Madrid)<br> Ctra. A1, Km 26.

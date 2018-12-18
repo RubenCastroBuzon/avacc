@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<% if (typeof(description) != "undefined") { %>
+    <meta name="description" content="<%- description %>">
+	<% } %>
+    <meta name="lang" content="es">
+    <meta name="keywords" content="San Sebastián de los Reyes, A-1, Club de Campo, Vecinos, Asociación, Urbanización">
+    <meta name="news_keywords" content="iniciar sesión">
+    <meta name="format-detection" content="address=yes;email=yes,telephone:no">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <% if (typeof(title) != "undefined") { %>
+	<meta property="og:title" content="<%- title %>">
+	<% } %>
+	<% if (typeof(description) != "undefined") { %>
+	<meta property="og:description" content="<%- description %>">
+	<% } %>
+	<meta property="og:image" content="http://www.avacc.org/images/avacc_header.PNG">
+    <meta property="og:image:width" content="492">
+    <meta property="og:image:height" content="247">
+    <meta property="og:url" content="http://www.avacc.org">
+    <meta property="og:site_name" content="AVACC">
+
+	<% if (typeof(title) != "undefined") { %>
+	<meta name="twitter:title" content="<%- title %>">
+	<% } %>
+    <% if (typeof(description) != "undefined") { %>
+	<meta name="twitter:description" content="<%- description %>">
+	<% } %>
+    <meta name="twitter:image:alt" content="AVACC">
+    <meta name="twitter:image" content="http://www.avacc.org/images/avacc_header.PNG">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ava_clubcampo">
+    <meta name="twitter:creator" content="@ava_clubcampo">
+
+    <meta property="fb:app_id" content="156605108393861">
+
+	<% if (typeof(title) != "undefined") { %>
+	<title><%- title %></title>
+	<% } %>
+
+	<script async defer src="./javascripts/avacc.js"></script>
+
+	<% if (typeof(links_with_integrity) != "undefined") { %>
+		<% for (var i=0; i<links_with_integrity.length; i++) { %>
+		<link rel="<%- reports[i].rel %>" href="<%- reports[i].href %>" integrity="<%- reports[i].integrity %>" crossorigin="<%- reports[i].crossorigin %>">
+		<% } %>
+	<% } else {%>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<% } %>
+
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<!--<![endif]-->
+	
+    <link rel="stylesheet" href="/stylesheets/pure-custom.css">
+    <link rel="stylesheet" href="./stylesheets/tooltips.css">
+    <link rel="stylesheet" href="./stylesheets/socialmedia.css">
+    <link rel="stylesheet" href="./stylesheets/avacc.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-112735114-1'></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-112735114-1');
+		gtag('config', 'UA-113525204-1');
+	</script>
+	</head>
+	<body>
+        <p>
+            <% if (typeof(user) != "undefined") { %>
+                ID: <%= user.id %><br/>
+                Username: <%= user.username %><br/>
+                Name: <%= user.displayName %><br/>
+                <% if (user.emails) { %>
+                Email: <%= user.emails[0].value %><br/>
+                <% } %>
+            <% } %>
+        </p>
+        <a href="/logout">Log out</a>
+	</body>	
+</html>    
