@@ -3,6 +3,21 @@ var news2017 = require('../utils/news_2017.js')
 
 var getDiciembre2018 = function () {
 
+    var get13 = function () {
+        var content = {
+          newsid: news2017.get_newsid(),
+          content_head: '13 de Diciembre de 2018',
+          post_title: 'Reunión de vecinos de club de campo con el Alcalde de San Sebastián de los Reyes',
+          post_author: 'Presidente',
+          post_category_ref: './alta',
+          post_category: 'Reunión en el centro cívico',
+          post_category_style: '#ed6d05',
+          post_description: '<p>El 13 de Diciembre, se produce una reunión en el centro cívico en la que el Alcalde y algunos miembros del ayuntamiento de San Sebastián de los Reyes y AVACC informan a los vecinos de club de campo de las diferentes reuniones y actuaciones realizadas sobre la Variante a la A-1.'
+  
+        }
+        return content
+      }
+
     var get11 = function () {
         var content = {
           newsid: news2017.get_newsid(),
@@ -17,20 +32,7 @@ var getDiciembre2018 = function () {
         }
         return content
       }
-    var get13 = function () {
-      var content = {
-        newsid: news2017.get_newsid(),
-        content_head: '13 de Diciembre de 2018',
-        post_title: 'Reunión de vecinos de club de campo con el Alcalde de San Sebastián de los Reyes',
-        post_author: 'Presidente',
-        post_category_ref: './alta',
-        post_category: 'Reunión',
-        post_category_style: '#555555',
-        post_description: '<p>El 13 de Diciembre, se produce una reunión en el centro cívico en la que el Alcalde y algunos miembros del ayuntamiento de San Sebastián de los Reyes y AVACC informan a los vecinos de club de campo de las diferentes reuniones y actuaciones realizadas sobre la Variante a la A-1.'
 
-      }
-      return content
-    }
     
   
     var subhead = {
@@ -54,8 +56,8 @@ var getDiciembre2018 = function () {
           post_author: 'Presidente',
           post_category_ref: './alta',
           post_category: 'Noticia',
-          post_category_style: '#555555',
-          post_description: '<p>El 22 de Noviembre, El proyecto de la variante de la A-1 despega: el presidente Pedro Sánchez se ha comprometido ante el jefe del Ejecutivo regional, Ángel Garrido, a que se desbloquee esta iniciativa.'
+          post_category_style: '#03a85f',
+          post_description: '<p>El 22 de Noviembre, el proyecto de la variante de la A-1 despega: el presidente Pedro Sánchez se ha comprometido ante el jefe del Ejecutivo regional, Ángel Garrido, a que se desbloquee esta iniciativa.'
           +'<br> <a target="_blank" style="color:#ed6d05;" href=https://www.abc.es/espana/madrid/abci-angel-garrido-penultimo-presidente-visita-moncloa-201811220203_noticia.html rel="noreferrer">Ángel Garrido arranca a Sánchez el compromiso de desbloquear la variante de la A-1</a>'
           +'<br> <a target="_blank" style="color:#ed6d05;" href=https://ecodiario.eleconomista.es/politica-eD/noticias/9537023/11/18/El-proyecto-de-construccion-de-la-variante-de-la-A1-podria-empezar-en-enero.html?fbclid=IwAR0BIrOoRGXnqFs2VQjfqbGhNDmDMYRzuX7xMiCfO-KJEpG9UEypA_0dQCc rel="noreferrer">El proyecto de construcción de la variante de la A-1 podría empezar en enero</a>'
           +'<br> <a target="_blank" style="color:#ed6d05;" href=http://zonaretiro.com/transporte/variante-a-1/?fbclid=IwAR1exv33aIxcvEdyZKaGUWxx7x3_iaUuzAU6M2iHDzbbpzr5lbzN7i7ZzbA rel="noreferrer">Así será la variante de la autovía A-1 entre la M-12 y El Molar</a>'
@@ -83,8 +85,8 @@ var getOctubre2018 = function () {
         post_title: 'Reunión de vecinos de club de campo con el Alcalde de San Sebastián de los Reyes',
         post_author: 'Presidente',
         post_category_ref: './alta',
-        post_category: 'Reunión',
-        post_category_style: '#555555',
+        post_category: 'Reunión en el centro cívico',
+        post_category_style: '#ed6d05',
         post_description: '<p>El 25 de Octubre, se produce una reunión en el centro cívico del Alcalde y algunos miembros del ayuntamiento de San Sebastian de los Reyes con los vecinos de club de campo. El alcalde y AVACC informan a los vecinos de las diferentes reuniones con Fomento.'
       }
       return content
@@ -98,7 +100,7 @@ var getOctubre2018 = function () {
           post_author: 'Presidente',
           post_category_ref: './alta',
           post_category: 'Comunicado',
-          post_category_style: '#ed6d05',    
+          post_category_style: '#555555',    
           post_description: '<p>El 22 de Octubre, tras las últimas informaciones vertidas en algún medio de comunicación, la Asociación de Vecinos y Amigos de club de Campo, en adelante AVACC, quisiera aclarar su postura a continuación:'
           + '<br>1) AVACC está a favor de solucionar los problemas de movilidad de la A-1 pero con soluciones reales como:'
           + '<br>- la construcción de 3 carriles principales más 2 carriles de vía de servicio en cada sentido desde la Cuesta de los Dominicos hasta El Molar'
@@ -130,7 +132,7 @@ var getAgosto2018 = function () {
         post_author: 'Presidente',
         post_category_ref: './alta',
         post_category: 'Noticia',
-        post_category_style: '#555555',
+        post_category_style: '#03a85f',
         post_description: '<p>El 28 de Agosto, se publica els iguiente artículo:' +            
               '<a target="_blank" style="color:#ed6d05;" href="https://www.abc.es/espana/madrid/abci-gobierno-central-frena-variante-201808280016_noticia.html" rel="noreferrer">El Gobierno central «frena» la variante de la A-1</a>'
       }
@@ -285,7 +287,7 @@ var getMarzo2018 = function () {
       post_author: 'Tesorera',
       post_category_ref: './alta',
       post_category: 'Reunión',
-      post_category_style: '#03a85f',
+      post_category_style: '#ed6d05',
       post_description: '<div class="post-images pure-g">' +
                 '<div class="pure-u-1 pure-u-md-1-2">' +
                     '<a href="./images/reunion_20180302.jpg"><img alt="reunión" class="pure-img-responsive" src="./images/reunion_20180302.jpg"></a>' +
