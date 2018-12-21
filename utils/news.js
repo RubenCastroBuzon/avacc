@@ -3,6 +3,23 @@ var news2017 = require('../utils/news_2017.js')
 
 var getDiciembre2018 = function () {
 
+  var get20 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '20 de Diciembre de 2018',
+      post_title: 'Todos los partidos políticos de San Sebastián de los Reyes apoyan las peticiones de AVACC',
+      post_author: 'Presidente',
+      post_category_ref: './alta',
+      post_category: 'Pleno del Ayuntamiento',
+      post_category_style: '#ed6d05',
+      post_description: '<p>El 20 de Diciembre, en el pleno del ayuntamiento de San Sebastián de los Reyes, todos los partidos políticos apoyan las peticiones de AVACC:'
+      +'<br> <a target="_blank" style="color:#ed6d05;" href="./resources/declaración institucional SSRR.pdf" rel="noreferrer"> Declaración Institucional</a>'
+      +'<br> <a target="_blank" style="color:#ed6d05;" href="./resources/Pleno_del_ayuntamiento.mp4" rel="noreferrer"> Video del pleno</a>'
+
+    }
+    return content
+  }
+
     var get13 = function () {
         var content = {
           newsid: news2017.get_newsid(),
@@ -39,7 +56,8 @@ var getDiciembre2018 = function () {
       content_subhead: 'Diciembre 2018',
       contents: []
     }
-  
+    
+    subhead.contents.push(get20())
     subhead.contents.push(get13())
     subhead.contents.push(get11())
       
