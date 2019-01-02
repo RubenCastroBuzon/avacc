@@ -3,6 +3,24 @@ var news2017 = require('../utils/news_2017.js')
 
 var getDiciembre2018 = function () {
 
+  var get26 = function () {
+    var content = {
+      newsid: news2017.get_newsid(),
+      content_head: '26 de Diciembre de 2018',
+      post_title: 'Artículo en la revista la plaza',
+      post_author: 'Presidente',
+      post_category_ref: './alta',
+      post_category: 'Artículo',
+      post_category_style: '#555555',
+      post_description: '<p>El 26 de Diciembre, se publica en la revista La Plaza el artículo: La Asociación de Vecinos y Amigos de Club de Campo,'
+      +'en lucha contra la variante de la A-1.'
+      +'<br> <a target="_blank" style="color:#ed6d05;" href="./resources/La_plaza_Enero_2019.png" rel="noreferrer"> Artículo</a>'
+      +'<br> <a target="_blank" style="color:#ed6d05;" href="./resources/La_plaza_enero_2019.pdf" rel="noreferrer"> Revista completa</a></p>'
+
+    }
+    return content
+  }
+
   var get20 = function () {
     var content = {
       newsid: news2017.get_newsid(),
@@ -14,7 +32,7 @@ var getDiciembre2018 = function () {
       post_category_style: '#03a85f',
       post_description: '<p>El 20 de Diciembre, en el pleno del ayuntamiento de San Sebastián de los Reyes, todos los partidos políticos apoyan las peticiones de AVACC:'
       +'<br> <a target="_blank" style="color:#ed6d05;" href="./resources/declaración institucional SSRR.pdf" rel="noreferrer"> Declaración Institucional</a>'
-      +'<br> <a target="_blank" style="color:#ed6d05;" href="./resources/Pleno_del_ayuntamiento.mp4" rel="noreferrer"> Video del pleno</a>'
+      +'<br> <a target="_blank" style="color:#ed6d05;" href="./resources/Pleno_del_ayuntamiento.mp4" rel="noreferrer"> Video del pleno</a></p>'
 
     }
     return content
@@ -29,7 +47,7 @@ var getDiciembre2018 = function () {
           post_category_ref: './alta',
           post_category: 'Reunión en el centro cívico',
           post_category_style: '#ed6d05',
-          post_description: '<p>El 13 de Diciembre, se produce una reunión en el centro cívico en la que el Alcalde y algunos miembros del ayuntamiento de San Sebastián de los Reyes y AVACC informan a los vecinos de club de campo de las diferentes reuniones y actuaciones realizadas sobre la Variante a la A-1.'
+          post_description: '<p>El 13 de Diciembre, se produce una reunión en el centro cívico en la que el Alcalde y algunos miembros del ayuntamiento de San Sebastián de los Reyes y AVACC informan a los vecinos de club de campo de las diferentes reuniones y actuaciones realizadas sobre la Variante a la A-1.</p>'
   
         }
         return content
@@ -44,7 +62,7 @@ var getDiciembre2018 = function () {
           post_category_ref: './alta',
           post_category: 'Reunión',
           post_category_style: '#555555',
-          post_description: '<p>El 11 de Diciembre, AVACC se reúne con los partidos políticos de San Sebastián de los Reyes. En breve se publicará un comunicado con todos los asuntos tratados en esta reunión.'
+          post_description: '<p>El 11 de Diciembre, AVACC se reúne con los partidos políticos de San Sebastián de los Reyes. En breve se publicará un comunicado con todos los asuntos tratados en esta reunión.</p>'
   
         }
         return content
@@ -57,6 +75,7 @@ var getDiciembre2018 = function () {
       contents: []
     }
     
+    subhead.contents.push(get26())
     subhead.contents.push(get20())
     subhead.contents.push(get13())
     subhead.contents.push(get11())
@@ -78,7 +97,7 @@ var getDiciembre2018 = function () {
           post_description: '<p>El 22 de Noviembre, el proyecto de la variante de la A-1 despega: el presidente Pedro Sánchez se ha comprometido ante el jefe del Ejecutivo regional, Ángel Garrido, a que se desbloquee esta iniciativa.'
           +'<br> <a target="_blank" style="color:#ed6d05;" href=https://www.abc.es/espana/madrid/abci-angel-garrido-penultimo-presidente-visita-moncloa-201811220203_noticia.html rel="noreferrer">Ángel Garrido arranca a Sánchez el compromiso de desbloquear la variante de la A-1</a>'
           +'<br> <a target="_blank" style="color:#ed6d05;" href=https://ecodiario.eleconomista.es/politica-eD/noticias/9537023/11/18/El-proyecto-de-construccion-de-la-variante-de-la-A1-podria-empezar-en-enero.html?fbclid=IwAR0BIrOoRGXnqFs2VQjfqbGhNDmDMYRzuX7xMiCfO-KJEpG9UEypA_0dQCc rel="noreferrer">El proyecto de construcción de la variante de la A-1 podría empezar en enero</a>'
-          +'<br> <a target="_blank" style="color:#ed6d05;" href=http://zonaretiro.com/transporte/variante-a-1/?fbclid=IwAR1exv33aIxcvEdyZKaGUWxx7x3_iaUuzAU6M2iHDzbbpzr5lbzN7i7ZzbA rel="noreferrer">Así será la variante de la autovía A-1 entre la M-12 y El Molar</a>'
+          +'<br> <a target="_blank" style="color:#ed6d05;" href=http://zonaretiro.com/transporte/variante-a-1/?fbclid=IwAR1exv33aIxcvEdyZKaGUWxx7x3_iaUuzAU6M2iHDzbbpzr5lbzN7i7ZzbA rel="noreferrer">Así será la variante de la autovía A-1 entre la M-12 y El Molar</a></p>'
   
         }
         return content
@@ -105,7 +124,7 @@ var getOctubre2018 = function () {
         post_category_ref: './alta',
         post_category: 'Reunión en el centro cívico',
         post_category_style: '#ed6d05',
-        post_description: '<p>El 25 de Octubre, se produce una reunión en el centro cívico del Alcalde y algunos miembros del ayuntamiento de San Sebastian de los Reyes con los vecinos de club de campo. El alcalde y AVACC informan a los vecinos de las diferentes reuniones con Fomento.'
+        post_description: '<p>El 25 de Octubre, se produce una reunión en el centro cívico del Alcalde y algunos miembros del ayuntamiento de San Sebastian de los Reyes con los vecinos de club de campo. El alcalde y AVACC informan a los vecinos de las diferentes reuniones con Fomento.</p>'
       }
       return content
     }
@@ -125,7 +144,7 @@ var getOctubre2018 = function () {
           + '<br>- actuaciones de mejora y modernización de los accesos de la A-1 a San Sebastián de los Reyes y a Alcobendas'
           + '<br>2) AVACC propone la ampliación del tren de cercanías a Algete, San Agustín de Guadalix y a El Molar con aparcamientos estratégicos, disuasorios, y gratuitos.'
           + '<br>3) La variante propuesta de 9 kilómetros no tiene conexión directa con la M-40, salvo que se utilicen los peajes de la R-2 interior (hacia Madrid) o de la M-12. Por tanto, AVACC propone liberar dichos peajes, no siendo necesaria la construcción de la variante.'
-          + '<br>Todos los puntos anteriormente mencionados fueron remitidos por AVACC a los distintos partidos políticos con representación en San Sebastián de los Reyes, al Ministerio de Fomento y a la Comunidad de Madrid el pasado 5 de junio, 2018.'
+          + '<br>Todos los puntos anteriormente mencionados fueron remitidos por AVACC a los distintos partidos políticos con representación en San Sebastián de los Reyes, al Ministerio de Fomento y a la Comunidad de Madrid el pasado 5 de junio, 2018.</p>'
         }
         return content
       }
@@ -151,8 +170,8 @@ var getAgosto2018 = function () {
         post_category_ref: './alta',
         post_category: 'Noticia',
         post_category_style: '#03a85f',
-        post_description: '<p>El 28 de Agosto, se publica els iguiente artículo:' +            
-              '<a target="_blank" style="color:#ed6d05;" href="https://www.abc.es/espana/madrid/abci-gobierno-central-frena-variante-201808280016_noticia.html" rel="noreferrer">El Gobierno central «frena» la variante de la A-1</a>'
+        post_description: '<p>El 28 de Agosto, se publica el siguiente artículo:' +
+              '<a target="_blank" style="color:#ed6d05;" href="https://www.abc.es/espana/madrid/abci-gobierno-central-frena-variante-201808280016_noticia.html" rel="noreferrer">El Gobierno central «frena» la variante de la A-1</a></p>'
       }
       return content
     }
