@@ -7,7 +7,7 @@ var getDiciembre2018 = function () {
     var content = {
       newsid: news2017.get_newsid(),
       content_head: '26 de Diciembre de 2018',
-      post_title: 'Artículo en la revista la plaza',
+      post_title: 'Artículo en la revista La Plaza',
       post_author: 'Presidente',
       post_category_ref: './alta',
       post_category: 'Artículo',
